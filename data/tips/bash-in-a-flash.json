@@ -1,0 +1,90 @@
+{
+  "slug": "bash-in-a-flash",
+  "type": "tip",
+  "title": "Bash in a Flash: The No-Stress Cheat Sheet",
+  "subtitle": "Simple commands you can use right away to move around, inspect files, and stay out of trouble.",
+  "hero": {
+    "image": "images/gg-tech.jpg",
+    "imageAlt": "Bash command guide"
+  },
+  "meta": [
+    { "label": "Level", "value": "Beginner", "icon": "🟢" },
+    { "label": "Type", "value": "Quick Reference", "icon": "🧭" },
+    { "label": "Category", "value": "Terminal Skills", "icon": "⌨️" }
+  ],
+  "intro": {
+    "title": "Start Here",
+    "paragraphs": [
+      "If the terminal feels intimidating, this guide keeps it light and practical. Learn a few commands, then repeat them until they feel natural.",
+      "Each section includes copy-ready commands and plain-English explanations so you can build confidence fast."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "steps",
+      "title": "1) Move Around",
+      "items": [
+        {
+          "title": "See where you are",
+          "body": "Use this first whenever you are unsure of your location.",
+          "code": { "language": "bash", "content": "pwd" }
+        },
+        {
+          "title": "List files",
+          "body": "Start with a simple list, then switch to detailed mode.",
+          "code": { "language": "bash", "content": "ls\nls -la" }
+        },
+        {
+          "title": "Change directories",
+          "body": "Use these three patterns constantly.",
+          "code": { "language": "bash", "content": "cd projects\ncd ..\ncd ~" },
+          "callout": { "variant": "tip", "text": "Use Tab to autocomplete names and avoid typos." }
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "2) Files You Will Use Every Day",
+      "items": [
+        {
+          "title": "Create and remove",
+          "body": "Make directories, create empty files, and remove carefully.",
+          "code": { "language": "bash", "content": "mkdir notes\ntouch todo.txt\nrm todo.txt" },
+          "callout": { "variant": "note", "text": "Double-check before running rm. Deleted files are usually gone for good." }
+        },
+        {
+          "title": "Copy and move",
+          "body": "Duplicate files or rename and move them in one command.",
+          "code": { "language": "bash", "content": "cp draft.txt draft-backup.txt\nmv draft.txt notes/draft.txt" }
+        },
+        {
+          "title": "Read file content",
+          "body": "Use quick views before opening an editor.",
+          "code": { "language": "bash", "content": "cat notes/draft.txt\nhead -n 5 notes/draft.txt\ntail -n 5 notes/draft.txt" }
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Bash Safety Habits",
+      "items": [
+        { "title": "Use quotes", "icon": "\"\"", "body": "Wrap paths with spaces: cd \"My Folder\"." },
+        { "title": "Start with ls", "icon": "👀", "body": "List files before removing or moving anything." },
+        { "title": "Read command help", "icon": "📘", "body": "Try command --help whenever you are unsure." }
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "You Are Officially Bash-Capable",
+    "text": "A handful of commands used well beats a giant cheat sheet you never practice."
+  },
+  "card": {
+    "title": "Bash in a Flash",
+    "summary": "A friendly Bash cheat sheet with essential commands and safe habits for everyday terminal work.",
+    "emoji": "⌨️"
+  },
+  "seo": {
+    "title": "Bash in a Flash: The No-Stress Cheat Sheet - Geeky Grands",
+    "description": "A beginner-friendly Bash cheat sheet with practical commands for navigation, file handling, and safety."
+  }
+}
