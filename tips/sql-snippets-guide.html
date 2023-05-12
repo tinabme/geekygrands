@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Snippets & Database Tips - Geeky Grands</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/tech-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cabin:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <h1 class="logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                    <img src="../images/gglogo.jpg" alt="Geeky Grands Logo" class="logo-image">
+                    Geeky Grands <span class="heart">♥</span>
+                </a>
+            </h1>
+            <ul class="nav-menu">
+                <li><a href="../index.html#study" class="nav-link">📚 Back to Study</a></li>
+                <li><a href="../index.html" class="nav-link">� Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tech Article Header -->
+    <section class="tech-hero">
+        <div class="tech-hero-container">
+            <div class="tech-header">
+                <h1 class="tech-title">SQL Snippets & Database Tips</h1>
+                <p class="tech-subtitle">Handy database queries and techniques for managing your data like a pro - think of these as your database recipe cards! 🗃️</p>
+                <div class="tech-meta">
+                    <span class="difficulty">🔧 Beginner to Advanced</span>
+                    <span class="time-required">⏱️ Reference Guide</span>
+                    <span class="category">🗃️ SQL & Database</span>
+                    <span class="date">📅 Originally: 2015</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <main id="main-content" class="tech-main" role="main" aria-label="SQL snippets and database tips">
+        <div class="tech-container">
+            
+            <!-- Introduction -->
+            <section class="tech-intro">
+                <div class="intro-card">
+                    <h3>📖 About This Guide</h3>
+                    <p>Database work can seem intimidating, but with the right snippets in your toolkit, you'll be querying data like a seasoned professional! This collection includes practical SQL examples for common tasks - from date formatting to finding duplicates.</p>
+                    <p>Each snippet is like a tried-and-true recipe - tested, reliable, and ready to use in your own projects. Whether you're a beginner learning the basics or an experienced developer looking for a quick reference, these examples will serve you well.</p>
+                </div>
+            </section>
+
+            <!-- Date & Time Operations -->
+            <section class="steps-section">
+                <h3>📅 Date & Time Operations</h3>
+                
+                <div class="step-list">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>ISO 8601 Date Conversion</h4>
+                            <p>Convert any date to the standard ISO format with UTC timezone marker. Perfect for APIs and data exchange!</p>
+                            <div class="code-block">
+                                <pre><code>SELECT 
+    RTRIM(
+        CAST(
+            CONVERT(
+                VARCHAR(50),
+                DATEADD(
+                    SECOND,
+                    DATEDIFF(SECOND, GETDATE(), GETUTCDATE()),
+                    '08/26/2014 08:18:00'
+                ),
+                127
+            ) AS VARCHAR
+        )
+    ) + 'Z' AS ISO_Date;</code></pre>
+                            </div>
+                            <div class="tip">
+                                <strong>💡 Pro Tip:</strong> This converts your local time to UTC and adds that 'Z' at the end - just like how international recipes need standardized measurements!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Date Range Queries</h4>
+                            <p>Find records within a specific date range - the safe way that handles time zones properly.</p>
+                            <div class="code-block">
+                                <pre><code>SELECT *
+FROM Orders
+WHERE OrderDate >= '2015-01-01'
+  AND OrderDate <  '2015-02-01';</code></pre>
+                            </div>
+                            <div class="tip">
+                                <strong>🎯 Why This Works:</strong> Using >= and < instead of BETWEEN avoids timezone confusion at midnight!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data Transformation -->
+            <section class="steps-section">
+                <h3>🔄 Data Transformation Magic</h3>
+                
+                <div class="step-list">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>PIVOT - Turn Rows into Columns</h4>
+                            <p>Transform your data from long format to wide format. Great for creating summary reports!</p>
+                            <div class="code-block">
+                                <pre><code>DECLARE @lyr VARCHAR(4) = YEAR(DATEADD(yyyy, -1, GETDATE()));
+
+SELECT *
+FROM (
+        SELECT 
+            basecard,
+            YEAR(docdate) AS [Year],
+            CONVERT(VARCHAR(3), DATEADD(M, MONTH(docdate), -1), 107) AS MONTHS,
+            linetotal
+        FROM mytbl
+        WHERE YEAR(docdate) >= @lyr
+    ) AS P
+PIVOT
+(
+    SUM(linetotal)
+    FOR MONTHS IN (Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, [Dec])
+) AS PVT
+ORDER BY basecard, [Year];</code></pre>
+                            </div>
+                            <div class="note">
+                                <strong>📊 Example Result:</strong> This transforms rows like (101319, 2015-01-01, 132.99) into columns like BaseCard: 101319, Year: 2015, Jan: 132.99, Feb: 188.89...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Conditional Aggregation</h4>
+                            <p>Calculate different totals in one query using CASE statements - like having multiple measuring cups!</p>
+                            <div class="code-block">
+                                <pre><code>SELECT 
+    CustomerID,
+    SUM(CASE WHEN YEAR(OrderDate) = 2015 THEN Total END) AS Total2015,
+    SUM(CASE WHEN YEAR(OrderDate) = 2014 THEN Total END) AS Total2014
+FROM Orders
+GROUP BY CustomerID;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Window Functions -->
+            <section class="steps-section">
+                <h3>🪟 Window Functions - The Smart Way</h3>
+                
+                <div class="step-list">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Row Numbers</h4>
+                            <p>Add sequential numbers to your results - perfect for pagination or ranking!</p>
+                            <div class="code-block">
+                                <pre><code>SELECT *, 
+       ROW_NUMBER() OVER (ORDER BY (SELECT 0)) AS rn
+FROM (
+        SELECT DISTINCT 
+            *
+        FROM YourTable
+     ) AS T
+ORDER BY rn;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>LEAD and LAG - Compare with Previous/Next</h4>
+                            <p>Look at the row before or after the current one. Great for tracking changes over time!</p>
+                            <div class="code-block">
+                                <pre><code>SELECT
+    EmployeeID,
+    PayDate,
+    Salary,
+    LAG(Salary, 1) OVER (PARTITION BY EmployeeID ORDER BY PayDate) AS PrevSalary,
+    LEAD(Salary, 1) OVER (PARTITION BY EmployeeID ORDER BY PayDate) AS NextSalary
+FROM Payroll;</code></pre>
+                            </div>
+                            <div class="tip">
+                                <strong>💰 Real World Use:</strong> Perfect for tracking salary changes, stock prices, or temperature readings over time!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data Cleaning -->
+            <section class="steps-section">
+                <h3>🧹 Data Cleaning & Maintenance</h3>
+                
+                <div class="step-list">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Find Duplicate Records</h4>
+                            <p>Spot those pesky duplicates before they cause problems in your reports.</p>
+                            <div class="code-block">
+                                <pre><code>SELECT ColumnA, COUNT(*) AS Cnt
+FROM MyTable
+GROUP BY ColumnA
+HAVING COUNT(*) > 1;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Remove Duplicates (Keep One)</h4>
+                            <p>Clean up duplicates while keeping one good copy - like organizing your recipe box!</p>
+                            <div class="code-block">
+                                <pre><code>WITH dupes AS (
+    SELECT 
+        *,
+        ROW_NUMBER() OVER (PARTITION BY ColumnA ORDER BY (SELECT 0)) AS rn
+    FROM MyTable
+)
+DELETE FROM dupes WHERE rn > 1;</code></pre>
+                            </div>
+                            <div class="note">
+                                <strong>⚠️ Safety First:</strong> Always backup your data before running DELETE statements!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Find Gaps in Sequential Numbers</h4>
+                            <p>Identify missing numbers in a sequence - useful for invoice numbers, order IDs, etc.</p>
+                            <div class="code-block">
+                                <pre><code>SELECT t1.ID + 1 AS MissingStart
+FROM Numbers t1
+LEFT JOIN Numbers t2 ON t2.ID = t1.ID + 1
+WHERE t2.ID IS NULL;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Advanced Techniques -->
+            <section class="steps-section">
+                <h3>🎓 Advanced Techniques</h3>
+                
+                <div class="step-list">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>CROSS APPLY - Correlated Subqueries Made Easy</h4>
+                            <p>Get related data for each row efficiently - like looking up the last order for each customer.</p>
+                            <div class="code-block">
+                                <pre><code>SELECT 
+    c.CustomerID,
+    x.LastOrderDate
+FROM Customers c
+CROSS APPLY (
+    SELECT MAX(OrderDate) AS LastOrderDate
+    FROM Orders o
+    WHERE o.CustomerID = c.CustomerID
+) AS x;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>String Aggregation</h4>
+                            <p>Combine multiple rows into a comma-separated list - the old school way that still works everywhere!</p>
+                            <div class="code-block">
+                                <pre><code>SELECT 
+    Department,
+    STUFF((
+        SELECT ', ' + EmployeeName
+        FROM Employees e2
+        WHERE e2.Department = e1.Department
+        FOR XML PATH(''), TYPE
+    ).value('.', 'VARCHAR(MAX)'), 1, 2, '') AS EmployeeList
+FROM Employees e1
+GROUP BY Department;</code></pre>
+                            </div>
+                            <div class="tip">
+                                <strong>🔧 Modern Alternative:</strong> In SQL Server 2017+, you can use STRING_AGG() function instead!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Update with JOIN</h4>
+                            <p>Update records based on data from another table - very powerful for data maintenance!</p>
+                            <div class="code-block">
+                                <pre><code>UPDATE t
+SET t.Status = 'Inactive'
+FROM Users t
+JOIN UserLogin u ON u.UserID = t.UserID
+WHERE u.LastLogin < '2015-01-01';</code></pre>
+                            </div>
+                            <div class="note">
+                                <strong>🛡️ Test First:</strong> Always test UPDATE statements with SELECT before running them!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Best Practices -->
+            <section class="prereq-section">
+                <h3>⭐ Best Practices & Tips</h3>
+                
+                <div class="prereq-grid">
+                    <div class="prereq-card">
+                        <span class="prereq-icon">🔍</span>
+                        <h4>Always Test First</h4>
+                        <p>Before running UPDATE or DELETE statements, test them as SELECT queries first. It's like tasting your soup before serving!</p>
+                    </div>
+                    
+                    <div class="prereq-card">
+                        <span class="prereq-icon">📚</span>
+                        <h4>Use Descriptive Names</h4>
+                        <p>Name your columns and aliases clearly. Future you (and your coworkers) will thank you!</p>
+                    </div>
+                    
+                    <div class="prereq-card">
+                        <span class="prereq-icon">⚡</span>
+                        <h4>Index Your Joins</h4>
+                        <p>Make sure the columns you're joining on have indexes. It's the difference between a quick lookup and searching through every drawer!</p>
+                    </div>
+                    
+                    <div class="prereq-card">
+                        <span class="prereq-icon">🎯</span>
+                        <h4>Be Specific</h4>
+                        <p>Use specific date ranges and WHERE clauses. Don't pull more data than you need - it's like bringing home the whole grocery store!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Back Link -->
+            <section class="back-link-section">
+                <a href="../index.html#study" class="back-to-study">← Back to Study & Wisdom</a>
+            </section>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

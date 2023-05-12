@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker + Node.js Guide - Geeky Grands</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/tech-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cabin:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navigation">
+                <div class="nav-container">
+            <h1 class="logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                    <img src="../images/gglogo.jpg" alt="Geeky Grands Logo" class="logo-image">
+                    Geeky Grands <span class="heart">♥</span>
+                </a>
+            </h1>
+            <ul class="nav-menu">
+                <li><a href="../index.html#study" class="nav-link">📚 Back to Study</a></li>
+                <li><a href="../index.html" class="nav-link">🏠 Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tech Article Header -->
+    <section class="tech-hero">
+        <div class="tech-hero-container">
+            <div class="tech-header">
+                <h1 class="tech-title">Dockerizing a Node.js Application</h1>
+                <p class="tech-subtitle">A step-by-step guide to containerizing your Node.js apps with Docker - making deployment as cozy as a warm kitchen! 🐳</p>
+                <div class="tech-meta">
+                    <span class="difficulty">🔧 Intermediate</span>
+                    <span class="time-required">⏱️ 30-45 mins</span>
+                    <span class="category">🐳 Docker + Node.js</span>
+                    <span class="date">📅 Originally: Aug 2017</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <main id="main-content" class="tech-main" role="main" aria-label="Docker Node.js tutorial content">
+        <div class="tech-container">
+            
+            <!-- Introduction Story -->
+            <section class="tech-story" aria-labelledby="intro-heading">
+                <div class="story-card">
+                    <h3 id="intro-heading">From Chaos to Containers</h3>
+                    <p>Docker uses containers to simplify the process of creating, deploying, and running applications. With containers, a developer can pull together an application with all of its dependencies and ship it as one package.</p>
+                    
+                    <p>Think of Docker containers like perfectly packed care packages - everything your application needs is bundled together in one tidy container, ready to run anywhere! In this guide, I'll walk you through creating and running a simple Docker image of a Node.js application (aka "Dockerizing"). 📦✨</p>
+                </div>
+            </section>
+
+            <!-- Prerequisites Section -->
+            <section class="prereq-section" aria-labelledby="prereq-heading">
+                <h3 id="prereq-heading">What You'll Need</h3>
+                
+                <div class="prereq-grid">
+                    <div class="prereq-card">
+                        <div class="prereq-icon">🐳</div>
+                        <h4>Docker Installed</h4>
+                        <p>First, you'll need to <a href="https://docs.docker.com/engine/installation/#supported-platforms" target="_blank" rel="noopener">install Docker</a> on your system.</p>
+                    </div>
+                    
+                    <div class="prereq-card">
+                        <div class="prereq-icon">📱</div>
+                        <h4>Node.js Application</h4>
+                        <p>A Node.js app to containerize. Don't have one? You can fork the <a href="https://github.com/tinabme/saySomething" target="_blank" rel="noopener">saySomething NodeOnlyVersion branch</a>.</p>
+                    </div>
+                    
+                    <div class="prereq-card">
+                        <div class="prereq-icon">💻</div>
+                        <h4>Command Line Access</h4>
+                        <p>These code snippets work in bash. If you're using a different shell, you may need to adjust commands accordingly.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step-by-Step Guide -->
+            <section class="steps-section">
+                <h3>Let's Start Dockerizing!</h3>
+                
+                <div class="step-list">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Create the Dockerfile</h4>
+                            <p>In your main application folder, create the Dockerfile. This file contains instructions to help Docker create an image of your Node.js application.</p>
+                            <div class="code-block">
+                                <pre><code>$ cd saySomething
+$ touch Dockerfile</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Set the Base Image</h4>
+                            <p>Edit the Dockerfile and add the base image. We'll use the official Node.js image as our foundation.</p>
+                            <div class="code-block">
+                                <pre><code>FROM node:boron</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Create Working Directory</h4>
+                            <p>Add instructions for Docker to create and set the working directory for the container.</p>
+                            <div class="code-block">
+                                <pre><code># Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Install Dependencies</h4>
+                            <p>The node:boron image comes with Node.js and NPM already installed. Now we install your application dependencies.</p>
+                            <div class="code-block">
+                                <pre><code># Install app dependencies
+COPY package.json /usr/src/app/
+RUN npm install</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Bundle Application Source</h4>
+                            <p>Docker needs to bundle your application's source code inside the Docker image using the COPY instruction.</p>
+                            <div class="code-block">
+                                <pre><code># Bundle app source
+COPY . /usr/src/app</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h4>Expose Port (Optional)</h4>
+                            <p>By default, Docker exposes port 80. If needed, use an EXPOSE instruction for additional ports.</p>
+                            <div class="code-block">
+                                <pre><code># Expose a port
+EXPOSE 8081</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">7</div>
+                        <div class="step-content">
+                            <h4>Define Entry Point</h4>
+                            <p>Finally, Docker needs instruction on what to execute when the image launches. Since our start instructions are in package.json, we'll call the start command.</p>
+                            <div class="code-block">
+                                <pre><code>ENTRYPOINT [ "npm", "start" ]</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Complete Dockerfile Section -->
+            <section class="complete-dockerfile-section">
+                <h3>The Complete Dockerfile</h3>
+                <p>Putting it all together, your final Dockerfile should look like this:</p>
+                
+                <div class="code-block large">
+                    <pre><code>FROM node:boron
+
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+# Install app dependencies
+COPY package.json /usr/src/app/
+RUN npm install
+
+# Bundle app source
+COPY . /usr/src/app
+
+EXPOSE 8081
+
+ENTRYPOINT [ "npm", "start" ]</code></pre>
+                </div>
+                
+                <p class="note"><strong>Note:</strong> You can remove the EXPOSE line if you don't need to expose a specific port.</p>
+            </section>
+
+            <!-- Build Instructions -->
+            <section class="build-section">
+                <h3>Build Your Docker Image</h3>
+                
+                <div class="build-steps">
+                    <div class="build-step">
+                        <h4>🏗️ Build the Image</h4>
+                        <p>Now that you have the instructions in place, you can build your Docker image. Move to the directory containing the Dockerfile and run:</p>
+                        <div class="code-block">
+                            <pre><code>$ docker build -t &lt;your-username&gt;/&lt;your-node-app-name&gt; .</code></pre>
+                        </div>
+                        <p class="tip">Replace <code>&lt;your-username&gt;</code> with your username and <code>&lt;your-node-app-name&gt;</code> with your app name.</p>
+                    </div>
+
+                    <div class="build-step">
+                        <h4>📋 Verify the Image</h4>
+                        <p>Your new image should now appear in the Docker image list:</p>
+                        <div class="code-block">
+                            <pre><code>$ docker images</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="build-step">
+                        <h4>🚀 Run Your Container</h4>
+                        <p>Test your containerized application by running it:</p>
+                        <div class="code-block">
+                            <pre><code>$ docker run -p 8081:8081 &lt;your-username&gt;/&lt;your-node-app-name&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tips Section -->
+            <section class="tips-section">
+                <h3>Grandma's Docker Wisdom</h3>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">📦</div>
+                        <h4>Package.json First</h4>
+                        <p>Copy package.json before copying your entire app - this way Docker can cache the npm install step and speed up subsequent builds!</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🔧</div>
+                        <h4>Layer Optimization</h4>
+                        <p>Order your Dockerfile commands from least to most frequently changed. This maximizes Docker's layer caching benefits.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🚪</div>
+                        <h4>Port Mapping</h4>
+                        <p>Don't forget to map your container port to a host port when running (using the -p flag) so you can access your application!</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🧹</div>
+                        <h4>Clean Builds</h4>
+                        <p>Use a .dockerignore file to exclude unnecessary files (like node_modules, .git) from your Docker context for faster builds.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Topics -->
+            <section class="related-section">
+                <h3>Continue Your Docker Journey</h3>
+                
+                <div class="related-grid">
+                    <div class="related-card">
+                        <h4>🔄 Next Steps</h4>
+                        <ul>
+                            <li>Learn about Docker Compose for multi-container apps</li>
+                            <li>Explore Docker registries like Docker Hub</li>
+                            <li>Dive into container orchestration with Kubernetes</li>
+                            <li>Study Docker security best practices</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="related-card">
+                        <h4>📚 Resources</h4>
+                        <ul>
+                            <li><a href="https://docs.docker.com/" target="_blank" rel="noopener">Official Docker Documentation</a></li>
+                            <li><a href="https://nodejs.org/en/docs/guides/nodejs-docker-webapp/" target="_blank" rel="noopener">Node.js Docker Guide</a></li>
+                            <li><a href="https://github.com/tinabme/saySomething" target="_blank" rel="noopener">Example saySomething App</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Back to Study Link -->
+            <section class="back-link-section">
+                <a href="../index.html#study" class="back-to-study">
+                    📚 Back to the Study for More Tech Topics
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h4>Happy Containerizing!</h4>
+                <p>Docker makes deploying applications as reliable as grandma's tried-and-true recipes - consistent every time! 🐳💕</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Geeky Grands. Made with ♥ and lots of containers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

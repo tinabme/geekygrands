@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host a Website on AWS S3 - Geeky Grands</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/tech-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cabin:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <h1 class="logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                    <img src="../images/gglogo.jpg" alt="Geeky Grands Logo" class="logo-image">
+                    Geeky Grands <span class="heart">♥</span>
+                </a>
+            </h1>
+            <ul class="nav-menu">
+                <li><a href="../index.html#study" class="nav-link">📚 Back to Study</a></li>
+                <li><a href="../index.html" class="nav-link">🏠 Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tech Guide Header -->
+    <section class="tech-hero">
+        <div class="tech-hero-container">
+            <div class="tech-header">
+                <h1 class="tech-title">☁️ Host a Website on AWS S3</h1>
+                <p class="tech-subtitle">Simple step-by-step guide to hosting your static website on Amazon S3</p>
+                <div class="tech-meta">
+                    <span>📖 Read Time: 10 mins</span>
+                    <span>☁️ AWS S3</span>
+                    <span>🌐 Web Hosting</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide Content -->
+    <main id="main-content" class="tech-main" role="main" aria-label="S3 website hosting guide content">
+        <div class="tech-container">
+            
+            <!-- Introduction -->
+            <section class="tech-intro">
+                <div class="intro-card">
+                    <h3>Why Host on AWS S3?</h3>
+                    <p>Amazon S3 (Simple Storage Service) is perfect for hosting static websites - those with HTML, CSS, and JavaScript files that don't need server-side processing. It's cost-effective, reliable, and scales automatically with your traffic.</p>
+                    
+                    <p>This guide will walk you through hosting a single-page site on S3, making it publicly accessible, and optionally adding your own domain name and HTTPS security.</p>
+                    
+                    <p><strong>What you'll need:</strong> An AWS account and your website files ready to upload.</p>
+                </div>
+            </section>
+
+            <!-- Step 1: Create S3 Bucket -->
+            <section class="steps-section">
+                <h3>📦 Step 1: Create an S3 Bucket</h3>
+                <div class="step-card">
+                    <p>Think of an S3 bucket as a folder in the cloud where you'll store your website files. The bucket name must be globally unique across all of AWS.</p>
+                    
+                    <h4>Using AWS Console:</h4>
+                    <ol>
+                        <li>Go to <strong>S3</strong> in the AWS Console</li>
+                        <li>Click <strong>Create bucket</strong></li>
+                        <li>Pick a globally unique name (e.g., <code>mysitename.com</code>)</li>
+                        <li>Choose your preferred region</li>
+                        <li>Click <strong>Create bucket</strong></li>
+                    </ol>
+                    
+                    <h4>Using AWS CLI:</h4>
+                    <div class="code-block">
+                        <pre><code>aws s3 mb s3://mysitename.com --region us-east-1</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 2: Upload Files -->
+            <section class="steps-section">
+                <h3>📤 Step 2: Upload Your Website Files</h3>
+                <div class="step-card">
+                    <p>Put your <code>index.html</code> and any assets (CSS, JavaScript, images) in a local folder on your computer.</p>
+                    
+                    <h4>Using AWS Console:</h4>
+                    <ol>
+                        <li>Open your bucket</li>
+                        <li>Click <strong>Upload</strong></li>
+                        <li>Drag and drop your files or use <strong>Add files</strong></li>
+                        <li>Click <strong>Upload</strong></li>
+                    </ol>
+                    
+                    <h4>Using AWS CLI (recommended for multiple files):</h4>
+                    <div class="code-block">
+                        <pre><code>aws s3 sync ./site s3://mysitename.com</code></pre>
+                    </div>
+                    <p><em>This syncs everything in your local <code>./site</code> folder to your S3 bucket.</em></p>
+                </div>
+            </section>
+
+            <!-- Step 3: Enable Static Hosting -->
+            <section class="steps-section">
+                <h3>🌐 Step 3: Enable Static Website Hosting</h3>
+                <div class="step-card">
+                    <p>This tells S3 to serve your files as a website instead of just storage.</p>
+                    
+                    <h4>Using AWS Console:</h4>
+                    <ol>
+                        <li>Open your bucket</li>
+                        <li>Go to <strong>Properties</strong> tab</li>
+                        <li>Scroll to <strong>Static website hosting</strong></li>
+                        <li>Click <strong>Edit</strong> and <strong>Enable</strong></li>
+                        <li>Set <strong>Index document</strong> to <code>index.html</code></li>
+                        <li>Save changes</li>
+                    </ol>
+                    
+                    <h4>Using AWS CLI:</h4>
+                    <div class="code-block">
+                        <pre><code>aws s3 website s3://mysitename.com --index-document index.html --error-document error.html</code></pre>
+                    </div>
+                    
+                    <p><strong>You'll get a website endpoint like:</strong><br>
+                    <code>http://mysitename.com.s3-website-us-east-1.amazonaws.com</code></p>
+                </div>
+            </section>
+
+            <!-- Step 4: Make Public -->
+            <section class="steps-section">
+                <h3>🔓 Step 4: Make Your Site Public</h3>
+                <div class="step-card">
+                    <p>By default, S3 buckets are private. You need to allow public access so browsers can view your website.</p>
+                    
+                    <h4>First, unblock public access:</h4>
+                    <ol>
+                        <li>In your bucket, go to <strong>Permissions</strong></li>
+                        <li>Edit <strong>Block public access</strong></li>
+                        <li>Uncheck <strong>Block all public access</strong></li>
+                        <li>Save changes and confirm</li>
+                    </ol>
+                    
+                    <h4>Then, add a bucket policy:</h4>
+                    <div class="code-block">
+                        <h5>Create policy.json file:</h5>
+                        <pre><code>{
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Sid":"PublicReadGetObject",
+      "Effect":"Allow",
+      "Principal":"*",
+      "Action":["s3:GetObject"],
+      "Resource":["arn:aws:s3:::mysitename.com/*"]
+    }
+  ]
+}</code></pre>
+                    </div>
+                    
+                    <h4>Apply the policy:</h4>
+                    <div class="code-block">
+                        <pre><code>aws s3api put-bucket-policy --bucket mysitename.com --policy file://policy.json</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 5: Test -->
+            <section class="steps-section">
+                <h3>✅ Step 5: Test Your Website</h3>
+                <div class="step-card">
+                    <p>Open the S3 website endpoint (from Step 3) in your browser. You should see your <code>index.html</code> page!</p>
+                    
+                    <div class="tip-card" style="background: #e8f5e8; border-left: 4px solid #4caf50; margin: 1rem 0;">
+                        <h4>🎉 Congratulations!</h4>
+                        <p>Your website is now live on the internet. Anyone with the URL can visit it.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Optional Steps -->
+            <section class="steps-section">
+                <h3>🚀 Optional: Advanced Features</h3>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">🌍</div>
+                        <h4>Custom Domain</h4>
+                        <p>If you own a domain (like <code>mysitename.com</code>), you can point it to your S3 website using DNS settings or Route 53.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🔒</div>
+                        <h4>HTTPS Security</h4>
+                        <p>S3 websites are HTTP-only. For HTTPS, use CloudFront (AWS's CDN) with an SSL certificate from AWS Certificate Manager.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">⚡</div>
+                        <h4>Performance</h4>
+                        <p>CloudFront also speeds up your site by caching it at edge locations worldwide, making it load faster for visitors.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">💰</div>
+                        <h4>Cost</h4>
+                        <p>S3 hosting is very affordable - typically just a few cents per month for small websites. You pay only for storage and data transfer.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sample HTML -->
+            <section class="complete-dockerfile-section">
+                <h3>📄 Sample index.html File</h3>
+                <div class="code-block">
+                    <h4>Minimal HTML to get started:</h4>
+                    <pre><code>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;title&gt;mysitename.com&lt;/title&gt;
+  &lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello from S3!&lt;/h1&gt;
+  &lt;p&gt;This is a single-page site served from S3.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+            </section>
+
+            <!-- Troubleshooting -->
+            <section class="tips-section">
+                <h3>🔧 Troubleshooting Tips</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">❌</div>
+                        <h4>403 Forbidden Error</h4>
+                        <p>Check that your bucket policy allows public access and that "Block public access" is turned off.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🔄</div>
+                        <h4>Changes Not Showing</h4>
+                        <p>S3 updates can take a few minutes. Try refreshing your browser or clearing cache.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">📱</div>
+                        <h4>Mobile Testing</h4>
+                        <p>Test your site on different devices and browsers to ensure it works well everywhere.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🔍</div>
+                        <h4>SEO Friendly</h4>
+                        <p>Include proper meta tags, alt text for images, and descriptive page titles for better search engine visibility.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Back Link -->
+            <section style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--sage-green);">
+                <a href="../index.html#study" style="
+                    display: inline-block;
+                    background: linear-gradient(135deg, var(--sage-green), var(--dusty-rose));
+                    color: white;
+                    padding: 1rem 2rem;
+                    border-radius: 50px;
+                    text-decoration: none;
+                    font-family: var(--font-sans);
+                    font-weight: 600;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                    transition: all 0.3s ease;
+                " onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+                    ← Back to Study & Wisdom
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h4>Thanks for learning AWS S3 hosting with Grandma! ☁️</h4>
+                <p>Remember: The cloud is just someone else's computer, but it's a very reliable computer!</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Geeky Grands. Made with love, code, and a little bit of cloud magic.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

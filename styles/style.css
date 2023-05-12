@@ -1,0 +1,720 @@
+/* Grandma's House Digital Theme */
+
+/* CSS Variables for that perfect grandma aesthetic */
+:root {
+    /* Warm, cozy color palette */
+    --cream: #faf7f2;
+    --sage-green: #9caf88;
+    --dusty-rose: #d4a5a5;
+    --warm-brown: #8b5a3c;
+    --soft-yellow: #f9e8a8;
+    --lavender: #b8a9c9;
+    --deep-burgundy: #6b4423;
+    
+    /* Typography */
+    --font-script: 'Dancing Script', cursive;
+    --font-serif: 'Crimson Text', serif;
+    --font-sans: 'Cabin', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-serif);
+    background-color: var(--cream);
+    color: var(--warm-brown);
+    line-height: 1.6;
+    font-size: 18px;
+    position: relative;
+}
+
+/* Vintage wallpaper pattern overlay */
+.wallpaper-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 50%, transparent 20%, rgba(156, 175, 136, 0.03) 21%, rgba(156, 175, 136, 0.03) 34%, transparent 35%, transparent),
+        linear-gradient(0deg, rgba(212, 165, 165, 0.02) 50%, transparent 50%);
+    background-size: 40px 40px, 20px 20px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Typography Styles */
+h1, h2, h3 {
+    font-family: var(--font-script);
+    color: var(--deep-burgundy);
+}
+
+h4 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    color: var(--warm-brown);
+}
+
+/* Navigation - Cozy hallway */
+.navigation {
+    background: linear-gradient(135deg, var(--cream) 0%, #f5f1ea 100%);
+    padding: var(--spacing-sm) 0;
+    box-shadow: 0 2px 10px rgba(139, 90, 60, 0.1);
+    border-bottom: 3px solid var(--sage-green);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--deep-burgundy);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.heart {
+    color: var(--dusty-rose);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-md);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--warm-brown);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.nav-link:hover {
+    background-color: var(--sage-green);
+    color: var(--cream);
+    border-color: var(--deep-burgundy);
+    transform: translateY(-2px);
+}
+
+/* Hero Section - Front Porch */
+.hero {
+    background: linear-gradient(135deg, var(--soft-yellow) 0%, var(--cream) 50%, var(--lavender) 100%);
+    padding: var(--spacing-xl) var(--spacing-md);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 25% 25%, var(--dusty-rose) 2px, transparent 2px),
+        radial-gradient(circle at 75% 75%, var(--sage-green) 1px, transparent 1px);
+    background-size: 50px 50px, 30px 30px;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-mat {
+    background: rgba(255, 255, 255, 0.8);
+    padding: var(--spacing-lg);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 3px solid var(--sage-green);
+    backdrop-filter: blur(10px);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--deep-burgundy);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--warm-brown);
+    font-style: italic;
+    margin-bottom: var(--spacing-md);
+}
+
+.rocking-chair {
+    background: var(--cream);
+    padding: var(--spacing-md);
+    border-radius: 15px;
+    border-left: 5px solid var(--dusty-rose);
+    margin: var(--spacing-md) 0;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    color: var(--warm-brown);
+    line-height: 1.8;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, var(--dusty-rose), var(--sage-green));
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 1.2rem;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-top: var(--spacing-md);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Room Sections */
+.room {
+    padding: var(--spacing-xl) var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+.room-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.room-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.room-title {
+    font-size: 2.8rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.room-subtitle {
+    font-size: 1.2rem;
+    color: var(--warm-brown);
+    font-style: italic;
+}
+
+/* Kitchen Room */
+.kitchen-room {
+    background: linear-gradient(135deg, #fff8f0 0%, var(--cream) 100%);
+    border-top: 5px solid var(--dusty-rose);
+    border-bottom: 5px solid var(--dusty-rose);
+}
+
+.kitchen-hero {
+    background: linear-gradient(135deg, #fff8f0 0%, var(--cream) 100%);
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    min-height: 300px;
+    border: 3px solid var(--dusty-rose);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.kitchen-hero-image {
+    flex: 0 0 300px;
+    height: 300px;
+    background-image: url('../images/gg-cook.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.kitchen-hero-content {
+    flex: 1;
+    text-align: left;
+    color: var(--deep-burgundy);
+}
+
+.kitchen-hero-content h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--deep-burgundy);
+}
+
+.kitchen-hero-content p {
+    font-size: 1.3rem;
+    color: var(--warm-brown);
+}
+
+.recipe-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.recipe-card {
+    background: white;
+    padding: var(--spacing-md);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 3px solid var(--soft-yellow);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+    border-color: var(--dusty-rose);
+}
+
+.recipe-image {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.recipe-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--deep-burgundy);
+}
+
+.recipe-link {
+    color: var(--sage-green);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--font-sans);
+}
+
+.recipe-link:hover {
+    color: var(--deep-burgundy);
+}
+
+/* Study Room */
+.study-room {
+    background: linear-gradient(135deg, #f0f5ff 0%, var(--cream) 100%);
+    border-top: 5px solid var(--sage-green);
+    border-bottom: 5px solid var(--sage-green);
+}
+
+.study-hero {
+    background: linear-gradient(135deg, #f0f5ff 0%, var(--cream) 100%);
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    min-height: 300px;
+    border: 3px solid var(--sage-green);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.study-hero-content {
+    flex: 1;
+    text-align: left;
+    color: var(--deep-burgundy);
+}
+
+.study-hero-image {
+    flex: 0 0 300px;
+    height: 300px;
+    background-image: url('../images/gg-tech.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.study-hero-content h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--deep-burgundy);
+}
+
+.study-hero-content p {
+    font-size: 1.3rem;
+    color: var(--warm-brown);
+}
+
+.tech-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.tech-card {
+    background: white;
+    padding: var(--spacing-md);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 3px solid var(--lavender);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+    border-color: var(--sage-green);
+}
+
+.tech-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.tech-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--deep-burgundy);
+}
+
+.tech-link {
+    color: var(--sage-green);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--font-sans);
+}
+
+.tech-link:hover {
+    color: var(--deep-burgundy);
+}
+
+/* Parlor Room */
+.parlor-room {
+    background: linear-gradient(135deg, #fff0f5 0%, var(--cream) 100%);
+    border-top: 5px solid var(--lavender);
+    border-bottom: 5px solid var(--lavender);
+}
+
+.wisdom-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.wisdom-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 3px solid var(--dusty-rose);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.wisdom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.quote-mark {
+    font-size: 4rem;
+    color: var(--dusty-rose);
+    font-family: var(--font-script);
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+
+.wisdom-card h4 {
+    font-size: 1.4rem;
+    margin: var(--spacing-md) 0 var(--spacing-sm) 0;
+    color: var(--deep-burgundy);
+}
+
+.wisdom-author {
+    font-style: italic;
+    color: var(--sage-green);
+    font-family: var(--font-script);
+    font-size: 1.1rem;
+    display: block;
+    margin-top: var(--spacing-sm);
+}
+
+/* Garden Room */
+.garden-room {
+    background: linear-gradient(135deg, #f5fff0 0%, var(--cream) 100%);
+    border-top: 5px solid var(--soft-yellow);
+    border-bottom: 5px solid var(--soft-yellow);
+    position: relative;
+}
+
+.garden-hero {
+    background: linear-gradient(135deg, #f5fff0 0%, var(--cream) 100%);
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    min-height: 300px;
+    border: 3px solid var(--sage-green);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.garden-hero-image {
+    flex: 0 0 300px;
+    height: 300px;
+    background-image: url('../images/gg-garden.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.garden-hero-content {
+    flex: 1;
+    text-align: left;
+    color: var(--deep-burgundy);
+}
+
+.garden-hero h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.garden-hero p {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.blog-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.blog-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 3px solid var(--sage-green);
+    transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+    border-color: var(--dusty-rose);
+}
+
+.blog-date {
+    color: var(--sage-green);
+    font-family: var(--font-script);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.blog-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--deep-burgundy);
+}
+
+.blog-link {
+    color: var(--sage-green);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--font-sans);
+}
+
+.blog-link:hover {
+    color: var(--deep-burgundy);
+}
+
+/* Footer - Back Porch */
+.footer {
+    background: linear-gradient(135deg, var(--warm-brown) 0%, var(--deep-burgundy) 100%);
+    color: var(--cream);
+    padding: var(--spacing-lg) var(--spacing-md);
+    text-align: center;
+    margin-top: var(--spacing-xl);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content h4 {
+    font-family: var(--font-script);
+    font-size: 2rem;
+    color: var(--soft-yellow);
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-content p {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-md);
+    border-radius: 15px;
+    margin: var(--spacing-md) 0;
+}
+
+.footer-bottom {
+    border-top: 2px solid var(--sage-green);
+    padding-top: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .room-title {
+        font-size: 2.2rem;
+    }
+    
+    .recipe-cards,
+    .tech-tips,
+    .wisdom-cards,
+    .blog-preview {
+        grid-template-columns: 1fr;
+    }
+    
+    .wisdom-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-preview {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .garden-hero,
+    .kitchen-hero,
+    .study-hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .garden-hero-image,
+    .kitchen-hero-image,
+    .study-hero-image {
+        flex: none;
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        order: -1;
+    }
+    
+    .garden-hero-content,
+    .kitchen-hero-content,
+    .study-hero-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.8rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .welcome-mat {
+        padding: var(--spacing-md);
+    }
+    
+    .room {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+    
+    .garden-hero,
+    .kitchen-hero,
+    .study-hero {
+        padding: 2rem 1rem;
+    }
+    
+    .garden-hero-image,
+    .kitchen-hero-image,
+    .study-hero-image {
+        width: 200px;
+        height: 200px;
+    }
+}
