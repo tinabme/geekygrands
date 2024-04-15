@@ -1,0 +1,89 @@
+{
+  "slug": "ruby-spark-notes",
+  "type": "tip",
+  "title": "Ruby Spark Notes: Snippets You Will Reuse",
+  "subtitle": "Small Ruby patterns for everyday coding tasks, explained in plain language.",
+  "hero": {
+    "image": "images/gg-tech.jpg",
+    "imageAlt": "Ruby snippets guide"
+  },
+  "meta": [
+    { "label": "Level", "value": "Beginner", "icon": "🟢" },
+    { "label": "Type", "value": "Snippet Guide", "icon": "💎" },
+    { "label": "Category", "value": "Ruby", "icon": "🧩" }
+  ],
+  "intro": {
+    "title": "Use, Tweak, Repeat",
+    "paragraphs": [
+      "Ruby shines when code stays short and readable. These snippets are made to copy, run, and adapt.",
+      "Try each one in order and change variable names to match your own project."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "steps",
+      "title": "Everyday Snippets",
+      "items": [
+        {
+          "title": "Loop with index",
+          "body": "Great for numbered output.",
+          "code": { "language": "ruby", "content": "names = [\"Ada\", \"Grace\", \"Linus\"]\nnames.each_with_index do |name, i|\n  puts \"#{i + 1}. #{name}\"\nend" }
+        },
+        {
+          "title": "Filter and transform",
+          "body": "Select active users and collect emails in one flow.",
+          "code": { "language": "ruby", "content": "emails = users\n  .select { |u| u[:active] }\n  .map { |u| u[:email] }" }
+        },
+        {
+          "title": "Default values with hash",
+          "body": "Count words without checking if keys exist first.",
+          "code": { "language": "ruby", "content": "counts = Hash.new(0)\n%w[ruby ruby rails].each { |word| counts[word] += 1 }\n# => {\"ruby\"=>2, \"rails\"=>1}" }
+        },
+        {
+          "title": "Safe nil handling",
+          "body": "Use safe navigation when nested values may be missing.",
+          "code": { "language": "ruby", "content": "city = user&.profile&.address&.city || \"Unknown\"" },
+          "callout": { "variant": "tip", "text": "This avoids NoMethodError when some fields are nil." }
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "Quick File and JSON Helpers",
+      "items": [
+        {
+          "title": "Read a JSON file",
+          "body": "Parse local JSON into a Ruby hash.",
+          "code": { "language": "ruby", "content": "require \"json\"\n\nraw = File.read(\"data.json\")\ndata = JSON.parse(raw)" }
+        },
+        {
+          "title": "Write pretty JSON",
+          "body": "Useful for debug dumps and snapshots.",
+          "code": { "language": "ruby", "content": "File.write(\"out.json\", JSON.pretty_generate(data))" }
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Ruby Habits That Help",
+      "items": [
+        { "title": "Prefer clear names", "icon": "📝", "body": "Readable code wins over clever one-liners." },
+        { "title": "Extract small methods", "icon": "🧱", "body": "If logic grows, move it into a well-named method." },
+        { "title": "Use Enumerable", "icon": "🔄", "body": "map, select, and each_with_index can replace manual loops." }
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Tiny Snippets, Big Time Savings",
+    "text": "Keep a personal snippet file and add to it every week."
+  },
+  "card": {
+    "title": "Ruby Spark Notes",
+    "summary": "Beginner-friendly Ruby snippets for loops, hashes, nil safety, and quick JSON file tasks.",
+    "emoji": "💎"
+  },
+  "seo": {
+    "title": "Ruby Spark Notes: Reusable Snippets - Geeky Grands",
+    "description": "A practical Ruby snippet guide with easy examples for common coding tasks."
+  }
+}
