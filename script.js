@@ -37,17 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Card hover effects with gentle animations
-    const cards = document.querySelectorAll('.recipe-card, .tech-card, .wisdom-card, .blog-card');
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-4px)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-        });
-    });
+    attachCardHoverEffects();
     
     // Intersection Observer for fade-in animations
     const observerOptions = {
@@ -78,6 +68,29 @@ document.addEventListener('DOMContentLoaded', function() {
     // Random comforting messages
     addComfortingMessages();
 });
+
+document.addEventListener('homepageCardsRendered', function() {
+    attachCardHoverEffects();
+});
+
+function attachCardHoverEffects() {
+    const cards = document.querySelectorAll('.recipe-card, .tech-card, .wisdom-card, .blog-card');
+    cards.forEach(card => {
+        if (card.dataset.hoverAttached === 'true') {
+            return;
+        }
+
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-4px)';
+        });
+
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+
+        card.dataset.hoverAttached = 'true';
+    });
+}
 
 // Welcome message function
 function showWelcomeMessage() {

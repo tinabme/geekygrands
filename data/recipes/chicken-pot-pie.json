@@ -1,0 +1,84 @@
+{
+  "slug": "chicken-pot-pie",
+  "type": "recipe",
+  "title": "Chicken Pot Pie",
+  "subtitle": "The ultimate comfort food that fills your kitchen with the most amazing aromas and your heart with pure satisfaction",
+  "hero": {
+    "image": "images/gg-cook.jpg",
+    "imageAlt": "Homestyle chicken pot pie"
+  },
+  "meta": [
+    { "label": "Difficulty", "value": "3 Stars", "icon": "⭐" },
+    { "label": "Bake", "value": "30-40 mins", "icon": "🔥" },
+    { "label": "Serves", "value": "6-8", "icon": "👨‍👩‍👧‍👦" },
+    { "label": "Profile", "value": "Hearty Comfort", "icon": "🥧" }
+  ],
+  "story": {
+    "title": "Pure Comfort in Every Bite",
+    "paragraphs": [
+      "This isn't just any chicken pot pie - this is the kind that makes your whole house smell like home and brings everyone running to the dinner table. With a flaky, buttery crust and a rich, creamy filling packed with tender chicken and vegetables, it's comfort food at its absolute finest.",
+      "I've perfected this recipe over decades, and it never fails to be a crowd favorite. The secret is that incredibly flaky crust and a filling that's perfectly seasoned and satisfying. It's the kind of meal that creates memories and fills hearts as much as stomachs. 🥧💕"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "title": "For the Flaky Crust",
+      "icon": "🥧",
+      "items": [
+        "3 cups all-purpose flour",
+        "1 teaspoon salt",
+        "¾ cup shortening",
+        "¾ cup butter, cut into pieces",
+        "1 egg, lightly beaten",
+        "1 tablespoon white vinegar",
+        "4-5 tablespoons cold water"
+      ]
+    },
+    {
+      "title": "For the Filling",
+      "icon": "🐔",
+      "items": [
+        "1 pound boneless, skinless chicken breasts",
+        "1 cup diced carrots",
+        "1 cup diced celery",
+        "⅔ cup chopped onion",
+        "⅓ cup margarine or butter",
+        "⅓ cup all-purpose flour",
+        "½ teaspoon salt",
+        "¼ teaspoon black pepper",
+        "¼ teaspoon celery seed",
+        "¼ teaspoon dried thyme",
+        "1¾ cups chicken broth",
+        "⅔ cup milk"
+      ]
+    }
+  ],
+  "steps": [
+    { "title": "Make the Flaky Crust", "body": "Mix flour and salt in a bowl. Add shortening and work the butter into the flour using a dough cutter until mixture resembles tiny pebbles. Add egg, 4-5 tablespoons cold water, and white vinegar. Stir until just combined. Divide dough in half and chill at least 30 minutes." },
+    { "title": "Cook the Chicken", "body": "Boil chicken breasts in salted water until tender, about 15-20 minutes. Remove and let cool, then cut into bite-sized pieces. Save 1¾ cups of the cooking broth for the filling." },
+    { "title": "Prep for Assembly", "body": "Preheat oven to 425°F. Roll out one dough half and place in an ungreased 9-inch pie pan. Press against bottom and sides." },
+    { "title": "Make the Filling", "body": "In a large saucepan, cook carrots, celery, and onion in margarine until tender, about 5-8 minutes. Stir in flour, salt, pepper, celery seed, and thyme until well mixed." },
+    { "title": "Create the Sauce", "body": "Gradually stir in chicken broth and milk. Cook, stirring constantly, until mixture boils and thickens. Remove from heat and stir in cooked chicken pieces." },
+    { "title": "Assemble the Pie", "body": "Pour hot chicken mixture into pastry-lined pie pan. Roll out remaining dough and place over filling. Seal edges and cut several slits in top crust to allow steam to escape." },
+    { "title": "Bake to Golden Perfection", "body": "Bake for 30-40 minutes or until crust is golden brown. If crust browns too quickly, cover edges with foil. Let cool for 10 minutes before serving." }
+  ],
+  "tips": [
+    { "title": "Hot Filling Secret", "icon": "🔥", "body": "Pour the hot filling into the pie shell immediately - this helps the bottom crust cook properly and prevents sogginess." },
+    { "title": "Veggie Perfection", "icon": "🥕", "body": "Cook the vegetables until just tender - they'll continue cooking in the oven and you don't want them mushy!" },
+    { "title": "Save That Broth", "icon": "🍯", "body": "Using the chicken cooking broth in the filling adds incredible depth of flavor - don't skip this step!" },
+    { "title": "Steam Vents", "icon": "✂️", "body": "Don't forget steam vents - those slits in the top crust are crucial to prevent the filling from boiling over and the crust from getting soggy." }
+  ],
+  "footer": {
+    "heading": "Ultimate Comfort Food!",
+    "text": "This pot pie is pure love on a plate - perfect for family dinners, potlucks, or anytime you need a warm hug in food form! 🥧💕"
+  },
+  "card": {
+    "title": "Chicken Pot Pie",
+    "summary": "Warm, creamy comfort dish with tender chicken and vegetables wrapped in flaky pastry.",
+    "emoji": "🥧"
+  },
+  "seo": {
+    "title": "Chicken Pot Pie - Geeky Grands",
+    "description": "A flaky-crusted chicken pot pie with creamy filling and deep homestyle comfort."
+  }
+}

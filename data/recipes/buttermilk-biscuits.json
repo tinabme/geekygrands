@@ -1,0 +1,65 @@
+{
+  "slug": "buttermilk-biscuits",
+  "type": "recipe",
+  "title": "Melt-in-Your-Mouth Buttermilk Biscuits",
+  "subtitle": "Fluffy, easy, buttery, mouthwatering biscuits you can enjoy with any meal",
+  "hero": {
+    "image": "images/gg-cook.jpg",
+    "imageAlt": "Buttermilk biscuits cooling in Grandma's kitchen"
+  },
+  "meta": [
+    { "label": "Difficulty", "value": "2 Stars", "icon": "⭐" },
+    { "label": "Bake", "value": "12-16 mins", "icon": "🔥" },
+    { "label": "Makes", "value": "8-10", "icon": "👨‍👩‍👧‍👦" },
+    { "label": "Technique", "value": "Keep It Cold!", "icon": "❄️" }
+  ],
+  "story": {
+    "title": "The Art of Perfect Biscuits",
+    "paragraphs": [
+      "There's something magical about homemade buttermilk biscuits - the way they split open with steam rising, begging for a pat of butter and honey. These biscuits are the real deal, using a technique that creates the most incredible layers.",
+      "The secret is in keeping everything cold and working quickly. I use a cheese grater to shred the butter, which creates perfect little pockets that turn into flaky layers when baked. It's like having a little piece of heaven on your breakfast table! 🧈✨"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "title": "Simple Perfection",
+      "icon": "🥄",
+      "items": [
+        "2 cups self-raising flour (sifted)",
+        "1 stick real butter (very cold)",
+        "1 cup buttermilk (very cold)"
+      ]
+    }
+  ],
+  "steps": [
+    { "title": "Prep and Chill", "body": "Preheat your oven to 450°F. Shred the stick of butter using a cheese grater and place it in the freezer while the oven heats up. This keeps it extra cold!" },
+    { "title": "Mix Gently", "body": "Spoon flour into the bowl with the shredded butter and gently mix so the butter pieces are coated with flour. This prevents the butter from clumping together." },
+    { "title": "Add the Buttermilk", "body": "Pour in the cold buttermilk and stir just until a dough forms. Don't overmix - lumpy is perfectly fine!" },
+    { "title": "Work Quickly", "body": "Sprinkle flour on the counter and dump the dough onto it. Flour your hands and gently pat and fold the dough several times to create layers. Flatten to about 1 inch thick. Work quickly to keep the dough from warming!" },
+    { "title": "Cut and Bake", "body": "Cut out the biscuits and place them in a greased skillet or pie pan so their sides are touching. Bake for 12-16 minutes until cooked through and golden." }
+  ],
+  "tips": [
+    { "title": "Cold Everything", "icon": "❄️", "body": "Keep the dough cold and slightly sticky. This is the secret to incredibly flaky layers!" },
+    { "title": "Straight Down Cut", "icon": "✂️", "body": "Don't twist the cutter when cutting biscuits - press straight down to avoid sealing the sides." },
+    { "title": "Sides Touching", "icon": "🤗", "body": "Place biscuits with sides touching in the pan - they support each other and rise higher!" },
+    { "title": "Hot Oven Ready", "icon": "🔥", "body": "Make sure the oven is fully preheated. You can chill the cut biscuits in the fridge while waiting!" }
+  ],
+  "variations": [
+    { "title": "Cheese Biscuits", "icon": "🧀", "body": "Add ½ cup sharp cheddar cheese to the flour mixture for savory cheese biscuits." },
+    { "title": "Herb Biscuits", "icon": "🌿", "body": "Mix in 2 tablespoons fresh chives, rosemary, or thyme for an aromatic twist." },
+    { "title": "Sweet Biscuits", "icon": "🍯", "body": "Add 2 tablespoons sugar and a teaspoon of vanilla for a slightly sweet version." }
+  ],
+  "footer": {
+    "heading": "Happy Baking!",
+    "text": "These biscuits are perfect with honey, jam, sausage gravy, or just a generous pat of butter. Pure comfort! 💕"
+  },
+  "card": {
+    "title": "Buttermilk Biscuits",
+    "summary": "Melt-in-your-mouth perfection with incredible flaky layers. The secret is keeping everything cold!",
+    "emoji": "🧈"
+  },
+  "seo": {
+    "title": "Buttermilk Biscuits - Geeky Grands",
+    "description": "Flaky buttermilk biscuits made with cold ingredients and a simple fold technique for beautiful layers."
+  }
+}

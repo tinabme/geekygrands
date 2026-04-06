@@ -1,0 +1,99 @@
+{
+  "slug": "herbs-hair-care",
+  "type": "tip",
+  "title": "🌿 Natural Hair Care with Herbs",
+  "subtitle": "Time-tested herbal remedies for healthy, beautiful hair",
+  "hero": {
+    "image": "images/gg-garden.jpg",
+    "imageAlt": "Herbs gathered from the garden"
+  },
+  "meta": [
+    { "label": "Read Time", "value": "8 mins", "icon": "📖" },
+    { "label": "Category", "value": "Natural Remedies", "icon": "🌱" },
+    { "label": "Focus", "value": "Hair Health", "icon": "💇‍♀️" }
+  ],
+  "intro": {
+    "title": "Hair Care Hints from Nature",
+    "paragraphs": [
+      "Long before modern shampoos and conditioners, people relied on herbs and natural ingredients to keep their hair healthy and beautiful. These time-tested remedies have been passed down through generations, and many are just as effective today as they were centuries ago.",
+      "In this guide, you'll discover which herbs can help with hair growth, dandruff control, scalp health, and adding natural shine to your locks. Many of these herbs might already be growing in your garden or available at your local health food store!",
+      "Note: Always do a patch test before trying new herbal treatments, especially if you have sensitive skin or allergies."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "cards",
+      "title": "🌱 Herbs for Hair Growth & Strength",
+      "items": [
+        { "title": "Catnip", "icon": "🌿", "paragraphs": ["Benefits: Believed to promote hair growth.", "How to use: Make a tea rinse by steeping dried catnip in hot water, cool, and use as a final rinse after shampooing. The scalp and hair follicle support may encourage new growth."] },
+        { "title": "Chamomile", "icon": "🌼", "paragraphs": ["Benefits: Supports scalp and hair follicle health.", "How to use: Brew a strong chamomile tea, let it cool, and use as a hair rinse. Great for adding subtle golden highlights to light hair too."] },
+        { "title": "Nettle", "icon": "🍃", "paragraphs": ["Benefits: Astringent herb for treatment of skin irritations and itching.", "How to use: Make a nettle tea rinse using dried nettle to avoid stinging. It is rich in vitamins and minerals that nourish hair follicles."] }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "🧴 Herbs for Scalp Health & Dandruff Control",
+      "items": [
+        { "title": "Rosemary", "icon": "🌿", "paragraphs": ["Benefits: Helps control dandruff and stimulates circulation.", "How to use: Add fresh or dried rosemary to boiling water, steep for 15 minutes, strain, and use as a final rinse."] },
+        { "title": "Thyme", "icon": "🌱", "paragraphs": ["Benefits: Acts as an antiseptic or tonic for hair.", "How to use: Create a thyme-infused rinse by steeping the herb in hot water. Helps maintain a healthy scalp environment."] },
+        { "title": "Comfrey", "icon": "🌿", "paragraphs": ["Benefits: Soothes and heals scalp irritation.", "How to use: Make a gentle comfrey tea rinse for its calming properties on sensitive scalps."] },
+        { "title": "Parsley", "icon": "🌾", "paragraphs": ["Benefits: Helpful in relieving skin irritations.", "How to use: Blend fresh parsley with water, strain, and use the liquid as a scalp treatment."] }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "✨ Herbs for Conditioning & Shine",
+      "items": [
+        { "title": "Sage", "icon": "🌿", "paragraphs": ["Benefits: Beneficial for damaged or fragile hair.", "How to use: Make a sage tea rinse to help strengthen damaged hair and gently darken graying hair."] },
+        { "title": "Elder Berries", "icon": "🍇", "paragraphs": ["Benefits: Add color tones to graying hair.", "How to use: Create a deep rinse with elderberry tea for subtle dark tones and conditioning benefits."] },
+        { "title": "Lemongrass", "icon": "🌿", "paragraphs": ["Benefits: Astringent properties for toning scalp.", "How to use: Brew lemongrass tea for a refreshing hair rinse that helps balance oil production."] },
+        { "title": "Lemon Verbena", "icon": "🌿", "paragraphs": ["Benefits: Leaves a fresh citrus fragrance.", "How to use: Create an aromatic hair rinse that leaves your hair smelling naturally fresh and clean."] },
+        { "title": "Lemon Palm", "icon": "🌴", "paragraphs": ["Benefits: Leaves a fresh citrus fragrance.", "How to use: Use as a natural hair perfume and conditioning treatment with a subtle pleasant scent."] }
+      ]
+    },
+    {
+      "type": "code",
+      "title": "📋 How to Make Herbal Hair Rinses",
+      "body": "Basic herbal hair rinse recipe:",
+      "code": {
+        "language": "text",
+        "content": "Ingredients:\n• 2-4 tablespoons dried herbs (or 1/2 cup fresh herbs)\n• 2 cups boiling water\n• Optional: 1 tablespoon apple cider vinegar\n\nInstructions:\n1. Place herbs in a heat-proof bowl or jar\n2. Pour boiling water over herbs\n3. Cover and steep for 15-30 minutes\n4. Strain out all plant material\n5. Add apple cider vinegar if desired (helps with shine)\n6. Let cool to lukewarm temperature\n\nHow to Use:\n• Shampoo hair as usual\n• Pour the herbal rinse slowly over hair and scalp\n• Massage gently into scalp\n• Leave on for 2-3 minutes\n• Rinse with cool water (optional - some prefer to leave it in)\n• Use 1-2 times per week for best results"
+      }
+    },
+    {
+      "type": "cards",
+      "title": "💡 Helpful Tips for Herbal Hair Care",
+      "items": [
+        { "title": "Temperature Matters", "icon": "🌡️", "body": "Always let herbal rinses cool to lukewarm before using. Too hot can damage hair, too cold won't be as effective." },
+        { "title": "Fresh is Best", "icon": "⏰", "body": "Make herbal rinses fresh each time. They can be stored in the refrigerator for up to 3 days but are most effective when freshly made." },
+        { "title": "Patch Test First", "icon": "🧪", "body": "Always test a small amount on your skin first, especially if you have sensitive skin or known allergies to plants." },
+        { "title": "Quality Matters", "icon": "🌿", "body": "Use organic herbs when possible. Dried herbs should be stored in airtight containers away from light and heat." }
+      ]
+    },
+    {
+      "type": "callout",
+      "title": "⚠️ Important Safety Notes",
+      "variant": "warning",
+      "paragraphs": [
+        "Allergies: Always do a patch test before using any new herbal treatment, especially if you have sensitive skin.",
+        "Pregnancy: If you're pregnant or nursing, consult with a healthcare provider before using herbal treatments.",
+        "Quality sources: Use herbs from reputable sources. Avoid picking wild plants unless you're absolutely certain of their identity.",
+        "Interactions: Some herbs can interact with medications. When in doubt, ask your healthcare provider.",
+        "Realistic expectations: Herbal treatments work gradually. Give them time and be consistent for best results."
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Thanks for learning natural hair care with Grandma! 🌿",
+    "text": "Remember: Nature's remedies take time and patience, but the results are worth it."
+  },
+  "card": {
+    "title": "Natural Hair Care with Herbs",
+    "summary": "Discover time-tested herbal remedies for healthy, beautiful hair using nature's own ingredients.",
+    "emoji": "🌿"
+  },
+  "seo": {
+    "title": "Natural Hair Care with Herbs - Geeky Grands",
+    "description": "Natural herbal rinses and scalp care remedies for stronger, shinier hair."
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "slug": "docker-nodejs-guide",
+  "type": "tip",
+  "title": "Dockerizing a Node.js Application",
+  "subtitle": "A step-by-step guide to containerizing your Node.js apps with Docker - making deployment as cozy as a warm kitchen! 🐳",
+  "hero": {
+    "image": "images/gg-tech.jpg",
+    "imageAlt": "Geeky Grands study corner"
+  },
+  "meta": [
+    { "label": "Difficulty", "value": "Intermediate", "icon": "🔧" },
+    { "label": "Time", "value": "30-45 mins", "icon": "⏱️" },
+    { "label": "Category", "value": "Docker + Node.js", "icon": "🐳" },
+    { "label": "Originally", "value": "Aug 2017", "icon": "📅" }
+  ],
+  "intro": {
+    "title": "From Chaos to Containers",
+    "paragraphs": [
+      "Docker uses containers to simplify the process of creating, deploying, and running applications. With containers, a developer can pull together an application with all of its dependencies and ship it as one package.",
+      "Think of Docker containers like perfectly packed care packages - everything your application needs is bundled together in one tidy container, ready to run anywhere! In this guide, I'll walk you through creating and running a simple Docker image of a Node.js application (aka \"Dockerizing\"). 📦✨"
+    ]
+  },
+  "blocks": [
+    {
+      "type": "cards",
+      "title": "What You'll Need",
+      "cardClass": "prereq-card",
+      "gridClass": "prereq-grid",
+      "items": [
+        {
+          "title": "Docker Installed",
+          "icon": "🐳",
+          "body": "First, you'll need Docker on your system.",
+          "links": [
+            {
+              "label": "Install Docker",
+              "href": "https://docs.docker.com/engine/installation/#supported-platforms"
+            }
+          ]
+        },
+        {
+          "title": "Node.js Application",
+          "icon": "📱",
+          "body": "A Node.js app to containerize. Don't have one? You can fork the example project.",
+          "links": [
+            {
+              "label": "Example saySomething app",
+              "href": "https://github.com/tinabme/saySomething"
+            }
+          ]
+        },
+        {
+          "title": "Command Line Access",
+          "icon": "💻",
+          "body": "These code snippets work in bash. If you're using a different shell, you may need to adjust commands accordingly."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "Let's Start Dockerizing!",
+      "items": [
+        {
+          "title": "Create the Dockerfile",
+          "body": "In your main application folder, create the Dockerfile. This file contains instructions to help Docker create an image of your Node.js application.",
+          "code": {
+            "language": "bash",
+            "content": "$ cd saySomething\n$ touch Dockerfile"
+          }
+        },
+        {
+          "title": "Set the Base Image",
+          "body": "Edit the Dockerfile and add the base image. We'll use the official Node.js image as our foundation.",
+          "code": {
+            "language": "dockerfile",
+            "content": "FROM node:boron"
+          }
+        },
+        {
+          "title": "Create Working Directory",
+          "body": "Add instructions for Docker to create and set the working directory for the container.",
+          "code": {
+            "language": "dockerfile",
+            "content": "# Create app directory\nRUN mkdir -p /usr/src/app\nWORKDIR /usr/src/app"
+          }
+        },
+        {
+          "title": "Install Dependencies",
+          "body": "The node:boron image comes with Node.js and NPM already installed. Now we install your application dependencies.",
+          "code": {
+            "language": "dockerfile",
+            "content": "# Install app dependencies\nCOPY package.json /usr/src/app/\nRUN npm install"
+          }
+        },
+        {
+          "title": "Bundle Application Source",
+          "body": "Docker needs to bundle your application's source code inside the Docker image using the COPY instruction.",
+          "code": {
+            "language": "dockerfile",
+            "content": "# Bundle app source\nCOPY . /usr/src/app"
+          }
+        },
+        {
+          "title": "Expose Port (Optional)",
+          "body": "By default, Docker exposes port 80. If needed, use an EXPOSE instruction for additional ports.",
+          "code": {
+            "language": "dockerfile",
+            "content": "# Expose a port\nEXPOSE 8081"
+          }
+        },
+        {
+          "title": "Define Entry Point",
+          "body": "Finally, Docker needs instruction on what to execute when the image launches. Since our start instructions are in package.json, we'll call the start command.",
+          "code": {
+            "language": "dockerfile",
+            "content": "ENTRYPOINT [ \"npm\", \"start\" ]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "title": "The Complete Dockerfile",
+      "body": "Putting it all together, your final Dockerfile should look like this:",
+      "variant": "large",
+      "code": {
+        "language": "dockerfile",
+        "content": "FROM node:boron\n\n# Create app directory\nRUN mkdir -p /usr/src/app\nWORKDIR /usr/src/app\n\n# Install app dependencies\nCOPY package.json /usr/src/app/\nRUN npm install\n\n# Bundle app source\nCOPY . /usr/src/app\n\nEXPOSE 8081\n\nENTRYPOINT [ \"npm\", \"start\" ]"
+      },
+      "callout": {
+        "variant": "note",
+        "text": "You can remove the EXPOSE line if you don't need to expose a specific port."
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Build Your Docker Image",
+      "sectionClass": "build-section",
+      "listClass": "build-steps",
+      "itemClass": "build-step",
+      "items": [
+        {
+          "title": "Build the Image",
+          "body": "Now that you have the instructions in place, you can build your Docker image. Move to the directory containing the Dockerfile and run:",
+          "code": {
+            "language": "bash",
+            "content": "$ docker build -t <your-username>/<your-node-app-name> ."
+          },
+          "callout": {
+            "variant": "tip",
+            "text": "Replace <your-username> with your username and <your-node-app-name> with your app name."
+          }
+        },
+        {
+          "title": "Verify the Image",
+          "body": "Your new image should now appear in the Docker image list:",
+          "code": {
+            "language": "bash",
+            "content": "$ docker images"
+          }
+        },
+        {
+          "title": "Run Your Container",
+          "body": "Test your containerized application by running it:",
+          "code": {
+            "language": "bash",
+            "content": "$ docker run -p 8081:8081 <your-username>/<your-node-app-name>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Grandma's Docker Wisdom",
+      "items": [
+        {
+          "title": "Package.json First",
+          "icon": "📦",
+          "body": "Copy package.json before copying your entire app - this way Docker can cache the npm install step and speed up subsequent builds!"
+        },
+        {
+          "title": "Layer Optimization",
+          "icon": "🔧",
+          "body": "Order your Dockerfile commands from least to most frequently changed. This maximizes Docker's layer caching benefits."
+        },
+        {
+          "title": "Port Mapping",
+          "icon": "🚪",
+          "body": "Don't forget to map your container port to a host port when running with the -p flag so you can access your application."
+        },
+        {
+          "title": "Clean Builds",
+          "icon": "🧹",
+          "body": "Use a .dockerignore file to exclude unnecessary files like node_modules and .git from your Docker context for faster builds."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Continue Your Docker Journey",
+      "cardClass": "related-card",
+      "gridClass": "related-grid",
+      "items": [
+        {
+          "title": "🔄 Next Steps",
+          "list": [
+            "Learn about Docker Compose for multi-container apps",
+            "Explore Docker registries like Docker Hub",
+            "Dive into container orchestration with Kubernetes",
+            "Study Docker security best practices"
+          ]
+        },
+        {
+          "title": "📚 Resources",
+          "links": [
+            {
+              "label": "Official Docker Documentation",
+              "href": "https://docs.docker.com/"
+            },
+            {
+              "label": "Node.js Docker Guide",
+              "href": "https://nodejs.org/en/docs/guides/nodejs-docker-webapp/"
+            },
+            {
+              "label": "Example saySomething App",
+              "href": "https://github.com/tinabme/saySomething"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Happy Containerizing!",
+    "text": "Docker makes deploying applications as reliable as grandma's tried-and-true recipes - consistent every time! 🐳💕"
+  },
+  "card": {
+    "title": "Docker + Node.js Guide",
+    "summary": "Learn how to containerize your Node.js applications with Docker - making deployment as reliable as grandma's recipes!",
+    "emoji": "🐳"
+  },
+  "seo": {
+    "title": "Docker + Node.js Guide - Geeky Grands",
+    "description": "A practical step-by-step guide to Dockerizing a Node.js application."
+  }
+}

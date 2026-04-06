@@ -133,6 +133,68 @@ h4 {
     transform: translateY(-2px);
 }
 
+.home-data-error {
+    background: white;
+    border: 2px solid var(--dusty-rose);
+    border-radius: 12px;
+    color: var(--deep-burgundy);
+    margin: 0;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+}
+
+.home-skeleton-card {
+    pointer-events: none;
+}
+
+.home-skeleton-circle,
+.home-skeleton-line,
+.home-skeleton-pill {
+    background: linear-gradient(90deg, rgba(156, 175, 136, 0.2) 25%, rgba(156, 175, 136, 0.42) 50%, rgba(156, 175, 136, 0.2) 75%);
+    background-size: 220% 100%;
+    animation: homeSkeletonPulse 1.4s ease-in-out infinite;
+}
+
+.home-skeleton-circle {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 0.9rem;
+    border-radius: 50%;
+}
+
+.home-skeleton-line {
+    width: 100%;
+    height: 0.9rem;
+    border-radius: 0.6rem;
+    margin-bottom: 0.65rem;
+}
+
+.home-skeleton-title {
+    height: 1.1rem;
+}
+
+.home-skeleton-short {
+    width: 72%;
+}
+
+.home-skeleton-pill {
+    width: 54%;
+    height: 1.85rem;
+    border-radius: 999px;
+    margin-top: 0.75rem;
+}
+
+@keyframes homeSkeletonPulse {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
 /* Hero Section - Front Porch */
 .hero {
     background: linear-gradient(135deg, var(--soft-yellow) 0%, var(--cream) 50%, var(--lavender) 100%);

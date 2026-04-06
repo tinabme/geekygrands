@@ -1,0 +1,85 @@
+{
+  "slug": "phone-tips",
+  "type": "tip",
+  "title": "Phone Tips for Beginners",
+  "subtitle": "Don't let that smartphone intimidate you! Let's make technology your friend, not your foe.",
+  "hero": {
+    "image": "images/gg-tech.jpg",
+    "imageAlt": "Simple smartphone tips at Geeky Grands"
+  },
+  "meta": [
+    { "label": "Level", "value": "Beginner Friendly", "icon": "📱" },
+    { "label": "Time", "value": "15 min read", "icon": "⏰" },
+    { "label": "Category", "value": "Getting Started", "icon": "🔧" }
+  ],
+  "intro": {
+    "title": "Welcome to Your Digital Journey!",
+    "paragraphs": [
+      "I know smartphones can seem overwhelming at first - all those buttons and apps and notifications! But just like learning to use a new kitchen appliance, once you understand the basics, you'll wonder how you ever lived without it.",
+      "I got my first smartphone at 68, and let me tell you, it was quite the adventure! Now I use it to video call my grandchildren, share photos of my garden, and even order groceries. If I can do it, so can you! 💪"
+    ]
+  },
+  "blocks": [
+    {
+      "type": "cards",
+      "title": "Getting to Know Your Phone",
+      "items": [
+        { "title": "Charging Your Phone", "icon": "🔋", "paragraphs": ["The basics: Plug your charger into the wall, then connect the cable to your phone. Most phones charge through a port at the bottom.", "Grandma's tip: Charge your phone overnight. A well-charged phone is a happy phone!", "Pro tip: Your phone will make a sound or show a lightning bolt when it starts charging."] },
+        { "title": "Unlocking Your Phone", "icon": "🔐", "paragraphs": ["The basics: Press the power button, then use your PIN, password, fingerprint, or face recognition to unlock.", "Grandma's tip: Choose a PIN that's meaningful to you but not obvious to others.", "Pro tip: Practice unlocking your phone a few times so it becomes second nature."] },
+        { "title": "Making Your First Call", "icon": "📞", "paragraphs": ["The basics: Look for the green phone icon, tap it, then dial the number and press the green call button.", "Grandma's tip: Save important numbers in your contacts - it's like having a digital phone book that you can't lose.", "Pro tip: To hang up, press the red button. A gentle tap will do."] },
+        { "title": "Sending Text Messages", "icon": "📝", "paragraphs": ["The basics: Find the messaging app, then select a contact or enter a phone number.", "Grandma's tip: Type your message in the box at the bottom, then tap Send.", "Pro tip: You can add emojis to make your messages more fun. 😊"] }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Essential Apps You'll Love",
+      "items": [
+        { "title": "Camera App", "icon": "📷", "paragraphs": ["What it does: Takes photos and videos.", "How to use it: Tap the camera icon, point at what you want to photograph, then tap the white circle button.", "Grandma's favorite use: Capturing photos of grandchildren and garden blooms."] },
+        { "title": "Weather App", "icon": "🌤️", "paragraphs": ["What it does: Shows current weather and forecasts.", "How to use it: Just open it - it usually knows your location automatically.", "Grandma's favorite use: Planning walks and knowing when to bring the laundry in."] },
+        { "title": "Maps App", "icon": "🗺️", "paragraphs": ["What it does: Gives you directions to anywhere.", "How to use it: Type in where you want to go, then tap Directions. It will talk you through each turn.", "Grandma's favorite use: Finding new restaurants and not getting lost visiting friends."] },
+        { "title": "Contacts App", "icon": "📖", "paragraphs": ["What it does: Stores phone numbers and addresses.", "How to use it: Add people by tapping the plus button, then fill in their information.", "Grandma's favorite use: Keeping family and friends in one safe place."] }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Common Worries (And Why They're Not So Scary)",
+      "items": [
+        { "title": "I'm afraid I'll break something!", "icon": "😰", "paragraphs": ["Phones are tougher than they look. You can't break your phone just by tapping the screen or opening apps.", "Remember: Most actions can be undone. If you open something by mistake, just tap Back or the X button."] },
+        { "title": "There are too many buttons and options!", "icon": "🤔", "paragraphs": ["Start with just the basics - calling, texting, and the camera. You don't need every feature right away.", "Remember: You can ignore most of those options until you're ready to explore."] },
+        { "title": "I'm worried about unexpected charges!", "icon": "💸", "paragraphs": ["Most plans today include unlimited calling and texting. For internet use, connect to your home Wi‑Fi whenever possible.", "Remember: You can check your usage in your phone's settings, just like checking a meter."] }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "Creating a Simple Daily Routine",
+      "items": [
+        { "title": "Morning ☀️", "body": "Start your day connected.", "list": ["Check your phone is charged", "Look at the weather forecast", "Read any messages from family", "Take a photo of something beautiful"] },
+        { "title": "Afternoon 🌞", "body": "Stay in touch.", "list": ["Call or text someone you care about", "Use the camera to capture moments", "Check directions if going somewhere new"] },
+        { "title": "Evening 🌙", "body": "Wind down digitally.", "list": ["Share photos from your day", "Set your phone to charge overnight", "Turn on Do Not Disturb for peaceful sleep"] }
+      ]
+    },
+    {
+      "type": "callout",
+      "title": "You've Got This!",
+      "variant": "note",
+      "paragraphs": [
+        "Remember, every expert was once a beginner. I went from being completely intimidated by my smartphone to using it daily for everything from recipe searches to video calls with my great-grandchildren.",
+        "Take it one day at a time, don't be afraid to ask for help, and celebrate each small victory. Before you know it, your phone will feel like a helpful companion rather than a mysterious gadget.",
+        "Final wisdom: The best way to learn is by doing. So pick up that phone, take a deep breath, and start exploring. You're braver than you believe and more capable than you imagine! 💕"
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Keep Learning & Growing!",
+    "text": "Technology is here to serve you, not the other way around. Take it at your own pace! 📱💕"
+  },
+  "card": {
+    "title": "Phone Tips for Beginners",
+    "summary": "Don't let that smartphone intimidate you! Simple tricks to make technology work for you, not against you.",
+    "emoji": "📱"
+  },
+  "seo": {
+    "title": "Phone Tips for Beginners - Geeky Grands",
+    "description": "A beginner-friendly introduction to smartphones, essential apps, and a simple daily routine."
+  }
+}

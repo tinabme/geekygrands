@@ -1,0 +1,105 @@
+{
+  "slug": "stain-removal-guide",
+  "type": "tip",
+  "title": "🧽 Grandma's Stain Removal Guide",
+  "subtitle": "Time-tested methods for tackling every laundry challenge",
+  "hero": {
+    "image": "images/gg-garden.jpg",
+    "imageAlt": "Household stain removal guide"
+  },
+  "meta": [
+    { "label": "Read Time", "value": "6 mins", "icon": "📖" },
+    { "label": "Category", "value": "Laundry Tips", "icon": "🧺" },
+    { "label": "Focus", "value": "Household Wisdom", "icon": "✨" }
+  ],
+  "intro": {
+    "title": "Every Stain Has a Solution",
+    "paragraphs": [
+      "For generations, grandmothers have tackled stains with ingenuity and household items. Before fancy stain removers filled store shelves, people relied on simple ingredients and proven techniques to keep clothes looking their best.",
+      "This guide contains time-tested methods for removing every type of stain you're likely to encounter - from baby food disasters to grass stains, wine spills to grease marks. Many of these solutions use items you probably already have in your kitchen or medicine cabinet!",
+      "Golden Rule: Always treat stains as soon as possible for the best results. The longer a stain sets, the harder it becomes to remove."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "cards",
+      "title": "🏠 Common Household Stains",
+      "items": [
+        { "title": "Baby Stains", "icon": "👶", "paragraphs": ["Method: Sprinkle with borax and soak in cold water before washing.", "Why it works: Borax breaks down proteins while cold water prevents setting the stain."] },
+        { "title": "Coffee", "icon": "☕", "paragraphs": ["Method: Dip in white vinegar and cold water, then use color-safe bleach.", "Why it works: Vinegar neutralizes the coffee acids, cold water prevents heat-setting."] },
+        { "title": "Chocolate", "icon": "🍫", "paragraphs": ["Method: Rinse in cold water then use dish soap and scrub.", "Why it works: Cold water prevents melting, dish soap cuts through the oils."] },
+        { "title": "Juice Stains", "icon": "🧃", "paragraphs": ["Method: Rinse with cold water immediately, then treat with white vinegar.", "Why it works: Quick action prevents sugar from setting, vinegar breaks down fruit acids."] }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "💪 Tough Stains That Need Extra Care",
+      "items": [
+        { "title": "Blood", "icon": "🩸", "paragraphs": ["Method: Drip hydrogen peroxide on stain and let it foam, then rinse with cold water.", "Important: Always use cold water - hot water will set blood stains permanently."] },
+        { "title": "Grass", "icon": "🌿", "paragraphs": ["Method: Scrub with rubbing alcohol, let air dry, then pre-treat with corn syrup.", "Pro tip: The alcohol breaks down chlorophyll, corn syrup helps lift stubborn residue."] },
+        { "title": "Ink", "icon": "🖊️", "paragraphs": ["Method: Use rubbing alcohol or hairspray, then wash in cold water.", "Note: Hairspray works because it contains alcohol - spray liberally and blot."] },
+        { "title": "Lipstick", "icon": "💄", "paragraphs": ["Method: Scrub with white vinegar and dish soap, then wash in cold water.", "Why it works: Dish soap cuts oils, vinegar helps break down waxy components."] }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "🛢️ Grease & Oil Stains",
+      "items": [
+        { "title": "Grease", "icon": "🥓", "paragraphs": ["Method: Rub with chalk, then scrub with dish soap and rinse in hot water.", "Pro tip: Chalk absorbs the grease, making it easier for soap to clean."] },
+        { "title": "Sweat Stains", "icon": "💦", "paragraphs": ["Method: Scrub with shampoo, then baking soda and white vinegar, then soak in salt water.", "Why this works: A multi-step approach tackles both oils and mineral deposits."] }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "🎨 Tricky Stains",
+      "items": [
+        { "title": "Crayon", "icon": "🖍️", "paragraphs": ["Method: Iron between two paper towels, then spray with WD-40 and wash as usual.", "How it works: Heat melts crayon, paper towels absorb it, WD-40 removes residue."] },
+        { "title": "Gum", "icon": "🍬", "paragraphs": ["Method: Freeze with ice, then scrape with a knife and wash as usual.", "Pro tip: Freezing makes gum brittle and easier to scrape off without spreading."] }
+      ]
+    },
+    {
+      "type": "code",
+      "title": "🧰 Build Your Emergency Stain Kit",
+      "body": "Keep these items handy for quick stain treatment:",
+      "code": {
+        "language": "text",
+        "content": "Kitchen Essentials:\n• White vinegar (for acidic stains)\n• Dish soap (for grease and oils)\n• Baking soda (for odors and gentle scrubbing)\n• Salt (for absorbing fresh spills)\n• Corn syrup (for stubborn grass stains)\n\nBathroom Cabinet:\n• Hydrogen peroxide (for blood and organic stains)\n• Rubbing alcohol (for ink and grass)\n• Shampoo (for oil-based stains)\n• White chalk (for grease absorption)\n\nLaundry Room:\n• Color-safe bleach\n• Borax (for protein stains)\n• WD-40 (for sticky residues)\n• Old toothbrush (for gentle scrubbing)\n\nQuick Action Tips:\n• Blot, don't rub (prevents spreading)\n• Work from outside of stain inward\n• Test any treatment on hidden area first\n• Act fast - fresh stains are easier to remove"
+      }
+    },
+    {
+      "type": "cards",
+      "title": "💡 Golden Rules for Stain Success",
+      "items": [
+        { "title": "Speed Matters", "icon": "⚡", "body": "The sooner you treat a stain, the better your chances of complete removal. Don't let stains sit." },
+        { "title": "Temperature Wisdom", "icon": "🧊", "body": "Cold water for protein stains like blood and sweat, hot water for grease. When in doubt, start cold." },
+        { "title": "Test First", "icon": "🔬", "body": "Always test stain treatments on a hidden area first to make sure they won't damage the fabric." },
+        { "title": "Check Before Drying", "icon": "👀", "body": "Never put stained items in the dryer until the stain is completely gone - heat sets stains permanently." }
+      ]
+    },
+    {
+      "type": "callout",
+      "title": "⚠️ Important Safety Reminders",
+      "variant": "warning",
+      "paragraphs": [
+        "Ventilation: Always work in well-ventilated areas when using cleaning products.",
+        "Test patches: Test any treatment on an inconspicuous area first to check for color-fastness.",
+        "Never mix chemicals: Don't combine different cleaning products - they can create dangerous reactions.",
+        "Read care labels: Always check fabric care instructions before treating stains.",
+        "When in doubt: For expensive or delicate items, consider professional cleaning."
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Thanks for learning stain removal with Grandma! 🧽",
+    "text": "Remember: Every stain is just a laundry challenge waiting to be conquered."
+  },
+  "card": {
+    "title": "Stain Removal Guide",
+    "summary": "Grandma's tried-and-true methods for removing every type of stain from baby food to wine spills.",
+    "emoji": "🧽"
+  },
+  "seo": {
+    "title": "Stain Removal Guide - Geeky Grands",
+    "description": "Household stain-fighting methods for laundry emergencies, plus a simple emergency stain kit."
+  }
+}

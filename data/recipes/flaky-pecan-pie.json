@@ -1,0 +1,81 @@
+{
+  "slug": "flaky-pecan-pie",
+  "type": "recipe",
+  "title": "Flaky Pecan Pie",
+  "subtitle": "A classic comforting crowd favorite dessert, welcome at any gathering (except maybe weight watchers 😄)",
+  "hero": {
+    "image": "images/gg-cook.jpg",
+    "imageAlt": "Classic pecan pie"
+  },
+  "meta": [
+    { "label": "Difficulty", "value": "3 Stars", "icon": "⭐" },
+    { "label": "Bake", "value": "45 mins", "icon": "🔥" },
+    { "label": "Serves", "value": "8", "icon": "👨‍👩‍👧‍👦" },
+    { "label": "Profile", "value": "Classic Comfort", "icon": "🥧" }
+  ],
+  "story": {
+    "title": "The Ultimate Holiday Pie",
+    "paragraphs": [
+      "This pecan pie is pure indulgence - rich, sweet, and absolutely irresistible. The combination of the flaky, buttery crust with that gooey, nutty filling creates magic in every bite.",
+      "I've been making this recipe for decades, and it never fails to be the star of the dessert table. The secret is in that incredibly flaky crust made with both shortening and butter, plus that perfect balance of brown sugar and corn syrup in the filling. Fair warning: you might need to hide it from yourself! 🥧✨"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "title": "For the Flaky Crust",
+      "icon": "🥧",
+      "items": [
+        "3 cups all-purpose flour",
+        "1 teaspoon salt",
+        "¾ cup shortening",
+        "¾ cup butter, cut into pieces",
+        "1 egg, lightly beaten",
+        "1 tablespoon white vinegar",
+        "4-5 tablespoons cold water"
+      ]
+    },
+    {
+      "title": "For the Filling",
+      "icon": "🌰",
+      "items": [
+        "1 cup packed brown sugar",
+        "2 tablespoons white sugar",
+        "2 tablespoons honey",
+        "½ teaspoon salt",
+        "1 cup light corn syrup",
+        "⅓ cup melted butter",
+        "1 teaspoon vanilla extract",
+        "3 eggs, beaten",
+        "1½ cups pecan halves or pieces"
+      ]
+    }
+  ],
+  "steps": [
+    { "title": "Make the Flaky Crust", "body": "Mix flour and salt in a bowl. Add shortening and work the butter into the flour using a dough cutter until mixture resembles tiny pebbles." },
+    { "title": "Bring It Together", "body": "Add egg, 4-5 tablespoons cold water, and white vinegar. Stir until just combined. Divide dough in half, wrap in plastic, and chill at least 30 minutes." },
+    { "title": "Prep for Baking", "body": "Preheat oven to 350°F. Roll out one dough half on floured surface. Fold into quarters, place in ungreased pie pan, and unfold. Press against bottom and sides." },
+    { "title": "Make the Filling", "body": "In a medium bowl, mix both sugars, honey, and salt. Add corn syrup, melted butter, vanilla, and beaten eggs. Stir until well combined. Mix in ½ cup of pecans." },
+    { "title": "Assemble the Pie", "body": "Pour remaining 1 cup of pecans into pie shell, then pour the syrup mixture over the top. The pecans will float up and create a beautiful top layer." },
+    { "title": "Bake to Perfection", "body": "Bake on preheated cookie sheet for about 45 minutes or until center is set. After 15-20 minutes, you may need to cover crust edge with foil strips to prevent over-browning." },
+    { "title": "Cool and Serve", "body": "Cool for 30 minutes before serving. Cover and refrigerate any remaining pie, if there is any!" }
+  ],
+  "tips": [
+    { "title": "Protect That Crust", "icon": "🛡️", "body": "Cover the crust edges with foil strips partway through baking to prevent burning while the center finishes cooking." },
+    { "title": "The Magic Mix", "icon": "🍯", "body": "Both shortening and butter in the crust create the ultimate flaky texture - don't skip either one!" },
+    { "title": "Double Pecan Power", "icon": "🌰", "body": "Adding pecans to both the filling and on top ensures every bite has that perfect nutty crunch." },
+    { "title": "Cookie Sheet Base", "icon": "🔥", "body": "Baking on a preheated cookie sheet helps ensure the bottom crust gets crispy and fully cooked." }
+  ],
+  "footer": {
+    "heading": "Pure Indulgence!",
+    "text": "This pie is rich enough to share - serve small slices with vanilla ice cream or fresh whipped cream! 💕"
+  },
+  "card": {
+    "title": "Flaky Pecan Pie",
+    "summary": "A classic crowd favorite with the flakiest crust and rich, sweet pecan filling.",
+    "emoji": "🥧"
+  },
+  "seo": {
+    "title": "Flaky Pecan Pie - Geeky Grands",
+    "description": "Classic pecan pie with a flaky crust and gooey nutty filling for holiday dessert tables."
+  }
+}

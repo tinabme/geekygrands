@@ -1,0 +1,76 @@
+{
+  "slug": "7up-biscuits",
+  "type": "recipe",
+  "title": "Easy 7UP Biscuits",
+  "subtitle": "Super easy, fluffy, buttery, mouthwatering biscuits you can enjoy with any meal",
+  "hero": {
+    "image": "images/gg-cook.jpg",
+    "imageAlt": "Fresh biscuits in Grandma's kitchen"
+  },
+  "meta": [
+    { "label": "Difficulty", "value": "1 Star (Easy!)", "icon": "⭐" },
+    { "label": "Bake", "value": "13-16 mins", "icon": "🔥" },
+    { "label": "Serves", "value": "8", "icon": "👨‍👩‍👧‍👦" },
+    { "label": "Speed", "value": "Super Quick", "icon": "⚡" }
+  ],
+  "story": {
+    "title": "The Secret to Perfect Biscuits",
+    "paragraphs": [
+      "Sometimes the most wonderful things come from the simplest ingredients! These 7UP biscuits are proof that you don't need to spend hours in the kitchen to create something absolutely delicious.",
+      "The carbonation in the soda creates the most amazing light, fluffy texture - it's like magic! I discovered this recipe when I was looking for something quick to serve unexpected guests, and now it's become one of my most requested treats. 🥤✨"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "title": "Simple Ingredients",
+      "icon": "🥄",
+      "items": [
+        "2½ cups baking mix (or Bisquick)",
+        "½ cup 7UP or Sprite (or any lemon-lime soda)",
+        "½ cup sour cream",
+        "¼ cup butter, melted"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "title": "Preheat and Mix",
+      "body": "Heat your oven to 450°F. In a medium bowl, stir together 2 cups of baking mix, the soda, and sour cream until just combined. Don't overmix - lumpy is lovely!"
+    },
+    {
+      "title": "Prepare the Dough",
+      "body": "Sprinkle the counter with the remaining baking mix and dump the dough out on it. Get some flour on your hands and pat the dough out to about ½ inch thick."
+    },
+    {
+      "title": "The Magic Fold",
+      "body": "Fold the dough into quarters, then pat down again to about ½ inch thick. This creates those beautiful flaky layers!"
+    },
+    {
+      "title": "Butter Bath",
+      "body": "Pour the melted butter into a pie pan or 8x8 baking dish. Cut the biscuits out and place them in the pan of butter - they should be sitting in that golden goodness!"
+    },
+    {
+      "title": "Bake to Perfection",
+      "body": "Bake for 13 to 16 minutes until cooked through and golden brown. Your kitchen will smell absolutely divine!"
+    }
+  ],
+  "tips": [
+    { "title": "Sides Touching", "icon": "🤗", "body": "When placing the biscuits in the pan, make sure their sides are touching. This helps them rise higher and stay soft!" },
+    { "title": "Foil Protection", "icon": "🛡️", "body": "If the tops start to get too dark, lay a piece of foil on top of the partially cooked biscuits to finish cooking without burning." },
+    { "title": "Soda Magic", "icon": "🥤", "body": "The carbonation in the soda is what makes these so light and fluffy - don't use flat soda!" },
+    { "title": "Butter Bath", "icon": "🧈", "body": "Don't skip the butter in the pan - it creates the most amazing crispy bottom and keeps them moist!" }
+  ],
+  "footer": {
+    "heading": "Happy Baking!",
+    "text": "These biscuits are perfect with honey, jam, or just a pat of butter. Enjoy every buttery bite! 💕"
+  },
+  "card": {
+    "title": "Easy 7UP Biscuits",
+    "summary": "Super easy, fluffy, buttery biscuits made with a secret ingredient that creates magic!",
+    "emoji": "🌕"
+  },
+  "seo": {
+    "title": "Easy 7UP Biscuits - Geeky Grands",
+    "description": "Quick fluffy biscuits with a lemon-lime soda shortcut and plenty of buttery comfort."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "slug": "chicken-noodle-soup",
+  "type": "recipe",
+  "title": "Homemade Chicken Noodle Soup",
+  "subtitle": "Pure soul-warming comfort food with homemade egg noodles - this satisfying recipe is always a welcome hit",
+  "hero": {
+    "image": "images/gg-cook.jpg",
+    "imageAlt": "Chicken noodle soup simmering on the stove"
+  },
+  "meta": [
+    { "label": "Difficulty", "value": "4 Stars", "icon": "⭐" },
+    { "label": "Cook", "value": "2-3 hours", "icon": "🔥" },
+    { "label": "Serves", "value": "6-8", "icon": "👨‍👩‍👧‍👦" },
+    { "label": "Time Required", "value": "Plan Your Day", "icon": "⏰" }
+  ],
+  "story": {
+    "title": "The Ultimate Comfort Food",
+    "paragraphs": [
+      "There's nothing quite like homemade chicken soup when you need some comfort. This recipe is special because we make our own egg noodles from scratch - they're so much better than store-bought!",
+      "Yes, it takes some time, but most of it is just letting the chicken simmer away while you go about your day. The house fills with the most wonderful aroma, and when it's done, you have liquid gold in a bowl. Perfect for cold days, sick days, or any day you need a hug in soup form! 🍲💕"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "title": "For the Noodles",
+      "icon": "🍜",
+      "items": [
+        "1 cup all-purpose flour",
+        "1 egg",
+        "Pinch of salt"
+      ]
+    },
+    {
+      "title": "For the Soup",
+      "icon": "🐔",
+      "items": [
+        "1 whole chicken (3-5 lbs)",
+        "32 oz chicken broth",
+        "1 tablespoon olive oil",
+        "½ onion, chopped",
+        "2 garlic cloves, minced",
+        "2 celery stalks, chopped",
+        "2 carrots, chopped",
+        "1 tablespoon parsley flakes",
+        "1 teaspoon dried mustard",
+        "Fresh ground pepper, to taste",
+        "Salt, to taste"
+      ]
+    }
+  ],
+  "steps": [
+    { "title": "Prep the Chicken", "body": "Make sure your chicken is fresh or completely thawed, with giblets removed. In a large pot, add oil, onion, and garlic. Sauté for about 1 minute until aromatic." },
+    { "title": "Start the Base", "body": "Add half the celery and half the carrots. Place chicken in pot breast side up. Add water until chicken is half submerged, then add chicken broth to just cover. Stir to mix evenly." },
+    { "title": "First Simmer", "body": "Simmer, don't boil, for 1 to 1½ hours. While the chicken cooks, start making your egg noodles." },
+    { "title": "Make the Noodles", "body": "In a medium bowl, mix flour, egg, and pinch of salt. Roll out on floured surface to about 1/16 inch thick. Cut into strips ¼ to ½ inch wide and 1-2 inches long. Let them dry while chicken cooks." },
+    { "title": "Flip and Continue", "body": "After 1-1½ hours, carefully flip chicken to breast side down. Add remaining celery, carrots, parsley flakes, dried mustard, salt, and pepper. Simmer another 1-1½ hours until chicken easily pulls off the bone." },
+    { "title": "Remove and Shred", "body": "Using tongs, carefully remove chicken to cool. Pull meat off bones into chunks, discarding skin and bones. Add noodles to soup one at a time to prevent clumping." },
+    { "title": "Final Assembly", "body": "Return chicken meat to pot, turn off heat, and let cool and thicken for about 30 minutes before serving. The wait is worth it!" }
+  ],
+  "tips": [
+    { "title": "Simmer, Don't Boil", "icon": "🔥", "body": "Keep it at a gentle simmer to get tender, fall-off-the-bone chicken without making it tough." },
+    { "title": "Fresh Noodles", "icon": "🍜", "body": "Homemade noodles make all the difference! They don't need to be perfect - rustic is beautiful." },
+    { "title": "Check for Bones", "icon": "🦴", "body": "Take your time removing all bones and skin - nobody wants a surprise crunch!" },
+    { "title": "Let It Rest", "icon": "⏰", "body": "That final 30-minute rest lets all the flavors meld and the soup thicken naturally." }
+  ],
+  "footer": {
+    "heading": "Comfort in a Bowl!",
+    "text": "This soup is pure love - serve it with crackers and watch it work its magic on everyone at the table! 💕"
+  },
+  "card": {
+    "title": "Chicken Noodle Soup",
+    "summary": "Pure soul-warming comfort food with homemade egg noodles. Perfect for what ails you!",
+    "emoji": "🍲"
+  },
+  "seo": {
+    "title": "Chicken Noodle Soup - Geeky Grands",
+    "description": "Homemade chicken noodle soup with scratch egg noodles and slow-simmered comfort."
+  }
+}

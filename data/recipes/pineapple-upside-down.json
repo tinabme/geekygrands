@@ -1,0 +1,76 @@
+{
+  "slug": "pineapple-upside-down",
+  "type": "recipe",
+  "title": "Pineapple Upside Down Cake",
+  "subtitle": "A show-stopping retro dessert that never goes out of style - sweet, fruity, and absolutely gorgeous",
+  "hero": {
+    "image": "images/gg-cook.jpg",
+    "imageAlt": "Pineapple upside down cake"
+  },
+  "meta": [
+    { "label": "Difficulty", "value": "2 Stars", "icon": "⭐" },
+    { "label": "Bake", "value": "40 mins", "icon": "🔥" },
+    { "label": "Serves", "value": "8-10", "icon": "👨‍👩‍👧‍👦" },
+    { "label": "Profile", "value": "Classic Retro", "icon": "🍍" }
+  ],
+  "story": {
+    "title": "A Slice of Retro Heaven",
+    "paragraphs": [
+      "This pineapple upside down cake is pure nostalgia on a plate! With its gorgeous golden pineapple rings and sweet maraschino cherries nestled in a rich brown sugar glaze, it's not just delicious - it's a showstopper that never fails to impress.",
+      "I love making this cake because it's surprisingly simple but looks like you spent hours in the kitchen. The magic happens when you flip it over and reveal that beautiful caramelized fruit topping. It's been a family favorite for generations, and one bite will tell you why! 🍍✨"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "title": "For the Topping",
+      "icon": "🍍",
+      "items": [
+        "¼ cup butter",
+        "⅔ cup packed brown sugar",
+        "7 pineapple rings (fresh or canned)",
+        "7 maraschino cherries"
+      ]
+    },
+    {
+      "title": "For the Cake",
+      "icon": "🧁",
+      "items": [
+        "1⅓ cups all-purpose flour",
+        "1 cup granulated sugar",
+        "⅓ cup butter, softened",
+        "1½ teaspoons baking powder",
+        "½ teaspoon salt",
+        "⅔ cup milk",
+        "1 egg",
+        "1 teaspoon vanilla extract"
+      ]
+    }
+  ],
+  "steps": [
+    { "title": "Prep and Preheat", "body": "Preheat your oven to 350°F. If using canned pineapple, drain the rings well and pat dry with paper towels." },
+    { "title": "Make the Caramel Base", "body": "In a 9x13 inch cake pan or 10-inch round cake pan, melt ¼ cup butter in the oven for about 2-3 minutes. Remove and sprinkle brown sugar evenly over the melted butter." },
+    { "title": "Arrange the Fruit", "body": "Arrange pineapple rings over the brown sugar. Place a cherry in the center of each pineapple ring. If you have extra space, you can add more cherries around the rings." },
+    { "title": "Make the Cake Batter", "body": "In a mixing bowl, beat together all cake ingredients with an electric mixer on low speed for 30 seconds, then on high speed for 3 minutes, scraping bowl occasionally." },
+    { "title": "Pour and Bake", "body": "Carefully pour batter evenly over pineapple in pan, trying not to disturb the fruit arrangement. Bake 40-45 minutes or until toothpick inserted in center comes out clean." },
+    { "title": "The Magic Flip", "body": "Immediately run a knife around edges to loosen cake. Place serving plate upside down over pan; carefully flip cake onto plate. Leave pan on cake for 1 minute, then remove. Serve warm or at room temperature." }
+  ],
+  "tips": [
+    { "title": "Dry Those Rings", "icon": "🍍", "body": "Pat the pineapple rings very dry to prevent excess moisture from making the cake soggy. Fresh pineapple works beautifully too!" },
+    { "title": "Flip Immediately", "icon": "⏰", "body": "Don't wait to flip the cake - do it right when it comes out of the oven while the caramel is still hot and flowing." },
+    { "title": "Butter the Pan", "icon": "🧈", "body": "Even though you're melting butter in the pan, give it a light greasing first to ensure easy release." },
+    { "title": "Pretty Patterns", "icon": "🎨", "body": "Take time arranging the fruit - it becomes your beautiful cake top! You can also add pecan halves or extra cherries for more color." }
+  ],
+  "footer": {
+    "heading": "Retro Perfection!",
+    "text": "This cake is as beautiful as it is delicious - perfect for special occasions or anytime you want to feel fancy! 🍍💕"
+  },
+  "card": {
+    "title": "Pineapple Upside Down Cake",
+    "summary": "Family calls it \"pineapple yum cake\" - it's usually gone before it fully cools down!",
+    "emoji": "🍍"
+  },
+  "seo": {
+    "title": "Pineapple Upside Down Cake - Geeky Grands",
+    "description": "A retro pineapple upside down cake with caramelized fruit topping and classic family charm."
+  }
+}

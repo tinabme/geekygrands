@@ -166,6 +166,62 @@ code {
     padding: var(--spacing-xl) 0;
 }
 
+.template-status {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: 20px;
+    border: 3px solid var(--lavender);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: var(--tech-font-sans);
+    font-weight: 600;
+}
+
+.template-status-error {
+    border-color: var(--tech-error);
+}
+
+.template-hero-image {
+    display: block;
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-top: var(--spacing-md);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.template-callout {
+    padding: var(--spacing-lg);
+    border-radius: 18px;
+    margin-top: var(--spacing-lg);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.template-callout h3 {
+    margin-left: 0;
+}
+
+.template-callout p {
+    color: var(--high-contrast-text);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+}
+
+.template-callout p:last-child {
+    margin-bottom: 0;
+}
+
+.template-callout-warning {
+    background: #fff8f0;
+    border-left: 5px solid var(--tech-warning);
+}
+
+.template-callout-note {
+    background: #f8fbff;
+    border-left: 5px solid var(--tech-primary);
+}
+
 .tech-container {
     max-width: 1000px;
     margin: 0 auto;

@@ -1,0 +1,85 @@
+{
+  "slug": "essential-oils-guide",
+  "type": "tip",
+  "title": "🌿 Essential Oils Guide",
+  "subtitle": "More than just pleasant scents - practical uses for everyday life",
+  "hero": {
+    "image": "images/gg-garden.jpg",
+    "imageAlt": "Geeky Grands garden scene"
+  },
+  "meta": [
+    { "label": "Read Time", "value": "10 mins", "icon": "📖" },
+    { "label": "Category", "value": "Practical Tips", "icon": "🏠" },
+    { "label": "Priority", "value": "Safety First", "icon": "⚠️" }
+  ],
+  "intro": {
+    "title": "What You'll Learn",
+    "paragraphs": [
+      "Essential oils aren't just for making things smell nice! In this guide, you'll discover practical, time-tested uses for essential oils in first aid, gardening, and around the house. From treating minor cuts to keeping pests away, these natural solutions have been helping families for generations.",
+      "Important: Always read the safety warnings at the bottom before using any essential oils."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "cards",
+      "title": "🏥 First Aid Uses",
+      "items": [
+        { "title": "Cuts & Abrasions", "icon": "🩹", "body": "Tea tree oil can be used to help sterilize cuts. Always dilute properly and test on a small area first." },
+        { "title": "Insomnia", "icon": "😴", "body": "A few drops of Lavender oil on the underside or in the corners of your pillow can help promote a sound night's sleep." },
+        { "title": "Lice Prevention", "icon": "🐛", "body": "Tea tree oil can be used in shampoo to kill lice, and in hair products to help prevent lice." },
+        { "title": "Pain Relief", "icon": "💊", "body": "Birch, eucalyptus and peppermint can all be used as a local anesthetic for minor aches and pains." },
+        { "title": "Rash & Irritation", "icon": "🌿", "body": "Tea tree oil can soothe itch from bug bites, rash or poison ivy. Always dilute before applying to skin." },
+        { "title": "Sinus & Respiratory", "icon": "🫁", "body": "Eucalyptus is used for its respiratory, sinus, and cold easing properties. Try adding to a diffuser or steam inhalation." }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "🌱 In the Garden",
+      "items": [
+        { "title": "Basil Oil", "icon": "🌿", "body": "Repels flies and supports vegetable plant health. Spray diluted solution around plants." },
+        { "title": "Cedarwood Oil", "icon": "🌲", "body": "Use it to help prevent roaches, slugs and snails from damaging your garden plants." },
+        { "title": "Lavender Oil", "icon": "💜", "body": "Attracts beneficial pollinators like bees and butterflies while repelling mosquitoes and chiggers." },
+        { "title": "Peppermint Oil", "icon": "🍃", "body": "Repels ants, aphids, beetles, moths and spiders. Perfect natural pest control." },
+        { "title": "Tea Tree Oil", "icon": "🌿", "body": "Helps plants ward off diseases, mold and fungus. Great for plant health maintenance." },
+        { "title": "Thyme Oil", "icon": "🌹", "body": "Deters beetles on rose bushes. Keep your beautiful flowers protected naturally." }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "🏠 Around the House",
+      "items": [
+        { "title": "Dishwasher Boost", "icon": "🍽️", "body": "Add two drops of grapefruit or lemongrass essential oil to your dishwasher before using it. The oil helps remove grease and soap accumulation so your dishes shine." },
+        { "title": "Flea Repellent", "icon": "🐕", "body": "Lemongrass oil can be used to repel fleas. Add about five drops to a cup of water in a spray bottle, then lightly spray your pet's coat." },
+        { "title": "Rodent Deterrent", "icon": "🐭", "body": "Dab a few drops of peppermint oil on cotton balls and place them around your home, or make a spray with two teaspoons of oil for every one cup of water." },
+        { "title": "Rug Freshener", "icon": "🏠", "body": "Add 12 drops of lavender oil to one ounce of baking soda. Mix and sprinkle on the rug, let sit for 30 minutes, then vacuum." },
+        { "title": "Stinky Shoes", "icon": "👟", "body": "Dab a few drops of your favorite essential oil on two cotton balls, place one in each shoe, and leave overnight." },
+        { "title": "Tick Prevention", "icon": "🕷️", "body": "Lavender oil can repel ticks and makes it difficult for the eggs to hatch. Add a few drops of lavender oil to the shampoo of your pet." }
+      ]
+    },
+    {
+      "type": "callout",
+      "title": "⚠️ Important Safety Warnings",
+      "variant": "warning",
+      "paragraphs": [
+        "Never ingest: Essential oils may be toxic if ingested, never swallow or ingest essential oils.",
+        "Wash hands: Wash hands after handling essential oils, as residue on the fingers may damage contact lenses or cause eye discomfort.",
+        "Patch test first: When using on skin or pet, start with a patch test to make sure you do not have an allergic reaction.",
+        "Read labels: Always read the labels and adhere to any recommendations provided.",
+        "Dilute properly: Most essential oils should be diluted with a carrier oil like coconut or jojoba oil before applying to skin."
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Thanks for learning with Grandma! 🌿",
+    "text": "Remember: Always use essential oils safely and consult professionals for serious health concerns."
+  },
+  "card": {
+    "title": "Essential Oils Guide",
+    "summary": "Discover practical uses for essential oils in first aid, gardening, and around the house - more than just pleasant scents!",
+    "emoji": "✨"
+  },
+  "seo": {
+    "title": "Essential Oils Guide - Geeky Grands",
+    "description": "Practical uses for essential oils in the home, garden, and everyday care, with safety guidance included."
+  }
+}
