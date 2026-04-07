@@ -1,0 +1,90 @@
+{
+  "slug": "white-chicken-chili",
+  "type": "recipe",
+  "title": "White Chicken Chili",
+  "subtitle": "A creamy, comforting twist on traditional chili that's absolutely loaded with flavor and perfect for chilly evenings",
+  "hero": {
+    "image": "images/gg-cook.jpg",
+    "imageAlt": "Creamy white chicken chili"
+  },
+  "meta": [
+    { "label": "Difficulty", "value": "2 Stars", "icon": "⭐" },
+    { "label": "Cook", "value": "30 mins", "icon": "🔥" },
+    { "label": "Serves", "value": "6-8", "icon": "👨‍👩‍👧‍👦" },
+    { "label": "Profile", "value": "Creamy Comfort", "icon": "🌶️" }
+  ],
+  "story": {
+    "title": "A Cozy Bowl of Heaven",
+    "paragraphs": [
+      "This white chicken chili is the perfect remedy for cold days and hungry hearts. It's creamy, satisfying, and packed with tender chicken, white beans, and just the right amount of spice to warm you from the inside out.",
+      "What makes this chili special is its versatility - you can easily adjust the heat level, add your favorite toppings, and it's always a crowd-pleaser. Plus, it's much quicker to make than traditional chili while still delivering all that comfort food satisfaction! 🍲💕"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "title": "Main Ingredients",
+      "icon": "🐔",
+      "items": [
+        "1 pound boneless, skinless chicken breasts",
+        "1 medium onion, diced",
+        "2 cloves garlic, minced",
+        "1 (4 oz) can diced green chiles",
+        "1 teaspoon ground cumin",
+        "½ teaspoon oregano",
+        "¼ teaspoon cayenne pepper (or to taste)",
+        "2 (15 oz) cans white beans, drained and rinsed"
+      ]
+    },
+    {
+      "title": "The Creamy Base",
+      "icon": "🥛",
+      "items": [
+        "3 cups chicken broth",
+        "1 cup sour cream",
+        "½ cup heavy cream",
+        "2 tablespoons olive oil",
+        "Salt and pepper to taste",
+        "2 tablespoons flour (optional, for thickening)"
+      ]
+    },
+    {
+      "title": "Toppings (Optional but Recommended!)",
+      "icon": "🧀",
+      "items": [
+        "Shredded Monterey Jack cheese",
+        "Chopped green onions",
+        "Fresh cilantro",
+        "Crushed tortilla chips",
+        "Lime wedges",
+        "Extra sour cream"
+      ]
+    }
+  ],
+  "steps": [
+    { "title": "Cook the Chicken", "body": "Season chicken breasts with salt and pepper. Heat 1 tablespoon olive oil in a large pot and cook chicken until golden and cooked through, about 6-8 minutes per side. Remove and let cool, then shred or cut into bite-sized pieces." },
+    { "title": "Sauté the Aromatics", "body": "In the same pot, heat remaining olive oil. Add diced onion and cook until softened, about 5 minutes. Add minced garlic, cumin, oregano, and cayenne pepper. Cook for another minute until fragrant." },
+    { "title": "Add the Base", "body": "Add the diced green chiles and chicken broth. Bring to a simmer and let cook for 10 minutes to blend the flavors." },
+    { "title": "Add Beans and Chicken", "body": "Stir in the white beans and shredded chicken. Simmer for another 10 minutes. If you want a thicker chili, mix 2 tablespoons flour with a little cold broth and stir into the pot." },
+    { "title": "Make It Creamy", "body": "Remove from heat and slowly stir in the sour cream and heavy cream. Mix well and taste for seasoning. Add salt, pepper, or more spices as needed." },
+    { "title": "Serve with Love", "body": "Ladle into bowls and top with your favorite toppings. Serve with warm cornbread or crusty rolls for the ultimate comfort meal!" }
+  ],
+  "tips": [
+    { "title": "Control the Heat", "icon": "🌶️", "body": "Start with less cayenne pepper - you can always add more, but you can't take it out! Adjust to your family's taste preferences." },
+    { "title": "Cream Tips", "icon": "🥛", "body": "Add the sour cream and heavy cream off the heat to prevent curdling. Stir gently and don't let it boil after adding." },
+    { "title": "Make Ahead Magic", "icon": "❄️", "body": "This chili tastes even better the next day! Make it ahead and gently reheat, adding a splash of broth if needed." },
+    { "title": "Topping Paradise", "icon": "🧀", "body": "The toppings make this chili extra special - set up a topping bar and let everyone customize their bowl!" }
+  ],
+  "footer": {
+    "heading": "Creamy Comfort in a Bowl!",
+    "text": "This chili is perfect for game days, family gatherings, or just when you need a warm hug in food form! 🍲💕"
+  },
+  "card": {
+    "title": "White Chicken Chili",
+    "summary": "A delicious twist on traditional chili with tender chicken, white beans, and warming spices.",
+    "emoji": "🍲"
+  },
+  "seo": {
+    "title": "White Chicken Chili - Geeky Grands",
+    "description": "Creamy white chicken chili with beans, gentle heat, and cozy toppings for cold nights."
+  }
+}

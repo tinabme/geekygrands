@@ -1,0 +1,127 @@
+{
+  "slug": "apple-pie-recipe",
+  "type": "recipe",
+  "title": "Grandma's Famous Apple Pie",
+  "subtitle": "The secret family recipe that's been warming hearts for generations",
+  "hero": {
+    "image": "images/gg-cook.jpg",
+    "imageAlt": "Grandma's kitchen scene"
+  },
+  "meta": [
+    { "label": "Prep", "value": "45 mins", "icon": "⏰" },
+    { "label": "Bake", "value": "50 mins", "icon": "🔥" },
+    { "label": "Serves", "value": "8", "icon": "👨‍👩‍👧‍👦" },
+    { "label": "Difficulty", "value": "Easy", "icon": "⭐" }
+  ],
+  "story": {
+    "title": "The Story Behind This Pie",
+    "paragraphs": [
+      "This apple pie recipe has been in our family since my great-grandmother first made it in her little farmhouse kitchen back in 1892. She'd say that the secret wasn't just in the ingredients, but in the love you put into every fold of the crust and every slice of apple.",
+      "I remember standing on a wooden stool, barely tall enough to see over the counter, watching Grandma peel apples in one long, continuous ribbon. \"The apples tell you when they're ready,\" she'd say, \"and the crust will sing when it's done.\" Now I'm passing this treasure on to you, dear. Make it with joy! 💕"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "title": "For the Crust",
+      "icon": "🥧",
+      "items": [
+        "2½ cups all-purpose flour",
+        "1 tsp salt",
+        "1 tbsp sugar",
+        "1 cup cold unsalted butter, cubed",
+        "¼ to ½ cup ice water",
+        "1 egg (for egg wash)"
+      ]
+    },
+    {
+      "title": "For the Filling",
+      "icon": "🍎",
+      "items": [
+        "8 large apples (Granny Smith & Honeycrisp mix)",
+        "¾ cup granulated sugar",
+        "2 tbsp brown sugar",
+        "2 tbsp all-purpose flour",
+        "1 tbsp cornstarch",
+        "1 tsp ground cinnamon",
+        "¼ tsp nutmeg",
+        "¼ tsp salt",
+        "2 tbsp butter, diced",
+        "1 tbsp lemon juice"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prepare the Crust",
+      "body": "In a large bowl, whisk together flour, salt, and sugar. Cut in cold butter using a pastry cutter or two knives until mixture resembles coarse crumbs with some pea-sized pieces. Gradually add ice water, one tablespoon at a time, until dough just comes together. Don't overwork it, dear - a tender crust is a happy crust!"
+    },
+    {
+      "title": "Rest the Dough",
+      "body": "Divide dough in half, shape into discs, wrap in plastic, and refrigerate for at least 1 hour. This is when I usually put the kettle on and have a cup of tea - patience makes everything better."
+    },
+    {
+      "title": "Prepare the Apples",
+      "body": "Peel, core, and slice apples into ¼-inch thick pieces. In a large bowl, toss apples with both sugars, flour, cornstarch, cinnamon, nutmeg, salt, and lemon juice. Let sit for 15 minutes - the apples will release their lovely juices."
+    },
+    {
+      "title": "Assemble the Pie",
+      "body": "Preheat oven to 425°F. Roll out bottom crust and place in a 9-inch pie dish. Fill with apple mixture and dot with butter pieces. Roll out top crust, place over filling, and crimp edges to seal. Cut several slits for steam vents - I like to make them decorative!"
+    },
+    {
+      "title": "The Final Touch",
+      "body": "Brush top crust with beaten egg for that golden shine. Bake for 20 minutes at 425°F, then reduce to 375°F and bake 30-35 minutes more until crust is golden and filling bubbles. Cool for at least 3 hours before serving - I know it's hard to wait!"
+    }
+  ],
+  "tips": [
+    {
+      "title": "Apple Selection",
+      "icon": "🍎",
+      "body": "Use a mix of tart and sweet apples. Granny Smith provides structure, while Honeycrisp adds sweetness. Never use just one variety!"
+    },
+    {
+      "title": "Keep it Cold",
+      "icon": "❄️",
+      "body": "Cold butter and ice water are crucial for a flaky crust. If the kitchen is warm, chill your bowl and utensils too."
+    },
+    {
+      "title": "Listen to Your Pie",
+      "icon": "🎵",
+      "body": "A done pie will bubble around the edges and the crust will sound hollow when tapped. Trust your senses, not just the timer."
+    },
+    {
+      "title": "Serve with Love",
+      "icon": "💝",
+      "body": "The best accompaniment to apple pie isn't just vanilla ice cream - it's the joy of sharing it with people you care about."
+    }
+  ],
+  "variations": [
+    {
+      "title": "Cheddar Apple Pie",
+      "icon": "🧀",
+      "body": "Add ½ cup shredded sharp cheddar cheese to the crust. It sounds strange, but trust me on this one!"
+    },
+    {
+      "title": "Honey-Cardamom Version",
+      "icon": "🍯",
+      "body": "Replace half the sugar with honey and add ½ tsp ground cardamom for an exotic twist."
+    },
+    {
+      "title": "Streusel Topping",
+      "icon": "🥜",
+      "body": "Skip the top crust and make a crumbly topping with oats, flour, butter, and brown sugar."
+    }
+  ],
+  "footer": {
+    "heading": "Happy Baking!",
+    "text": "Remember, the best ingredient in any recipe is love. Share this pie with someone special! 💕"
+  },
+  "card": {
+    "title": "Grandma's Apple Pie",
+    "summary": "The recipe that's been in our family for generations, with a crust so flaky it'll make you weep happy tears.",
+    "emoji": "🥧"
+  },
+  "seo": {
+    "title": "Grandma's Apple Pie Recipe - Geeky Grands",
+    "description": "A classic family apple pie recipe with flaky crust and warm spices."
+  }
+}

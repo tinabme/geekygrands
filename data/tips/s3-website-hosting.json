@@ -1,0 +1,103 @@
+{
+  "slug": "s3-website-hosting",
+  "type": "tip",
+  "title": "☁️ Host a Website on AWS S3",
+  "subtitle": "Simple step-by-step guide to hosting your static website on Amazon S3",
+  "hero": {
+    "image": "images/gg-tech.jpg",
+    "imageAlt": "AWS S3 static site hosting guide"
+  },
+  "meta": [
+    { "label": "Read Time", "value": "10 mins", "icon": "📖" },
+    { "label": "Category", "value": "AWS S3", "icon": "☁️" },
+    { "label": "Topic", "value": "Web Hosting", "icon": "🌐" }
+  ],
+  "intro": {
+    "title": "Why Host on AWS S3?",
+    "paragraphs": [
+      "Amazon S3 is perfect for hosting static websites - those with HTML, CSS, and JavaScript files that don't need server-side processing. It's cost-effective, reliable, and scales automatically with your traffic.",
+      "This guide walks you through hosting a single-page site on S3, making it publicly accessible, and optionally adding your own domain name and HTTPS security.",
+      "What you'll need: An AWS account and your website files ready to upload."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "steps",
+      "title": "📦 Step 1: Create an S3 Bucket",
+      "items": [
+        { "title": "Using AWS Console", "body": "Think of an S3 bucket as a folder in the cloud where you'll store your website files. The bucket name must be globally unique.", "list": ["Go to S3 in the AWS Console", "Click Create bucket", "Pick a globally unique name, for example mysitename.com", "Choose your preferred region", "Click Create bucket"], "code": { "language": "bash", "content": "aws s3 mb s3://mysitename.com --region us-east-1" } }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "📤 Step 2: Upload Your Website Files",
+      "items": [
+        { "title": "Upload your site", "body": "Put your index.html and any assets in a local folder on your computer.", "list": ["Open your bucket", "Click Upload", "Drag and drop your files or use Add files", "Click Upload"], "code": { "language": "bash", "content": "aws s3 sync ./site s3://mysitename.com" } }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "🌐 Step 3: Enable Static Website Hosting",
+      "items": [
+        { "title": "Turn storage into a website", "body": "This tells S3 to serve your files as a website instead of just storage.", "list": ["Open your bucket", "Go to the Properties tab", "Scroll to Static website hosting", "Click Edit and Enable", "Set Index document to index.html", "Save changes"], "code": { "language": "bash", "content": "aws s3 website s3://mysitename.com --index-document index.html --error-document error.html" }, "callout": { "variant": "tip", "text": "Your endpoint will look like http://mysitename.com.s3-website-us-east-1.amazonaws.com" } }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "🔓 Step 4: Make Your Site Public",
+      "items": [
+        { "title": "Unblock public access", "body": "By default, S3 buckets are private. You need to allow public access so browsers can view your website.", "list": ["Go to Permissions", "Edit Block public access", "Uncheck Block all public access", "Save and confirm"] },
+        { "title": "Add a bucket policy", "body": "Create a policy file and apply it to the bucket.", "code": { "language": "json", "content": "{\n  \"Version\":\"2012-10-17\",\n  \"Statement\":[\n    {\n      \"Sid\":\"PublicReadGetObject\",\n      \"Effect\":\"Allow\",\n      \"Principal\":\"*\",\n      \"Action\":[\"s3:GetObject\"],\n      \"Resource\":[\"arn:aws:s3:::mysitename.com/*\"]\n    }\n  ]\n}" }, "callout": { "variant": "tip", "text": "Apply it with: aws s3api put-bucket-policy --bucket mysitename.com --policy file://policy.json" } }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "✅ Step 5: Test Your Website",
+      "items": [
+        { "title": "Open the endpoint", "body": "Open the S3 website endpoint from Step 3 in your browser. You should see your index.html page.", "callout": { "variant": "tip", "text": "Congratulations! Your website is now live on the internet." } }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "🚀 Optional: Advanced Features",
+      "items": [
+        { "title": "Custom Domain", "icon": "🌍", "body": "If you own a domain like mysitename.com, you can point it to your S3 website using DNS settings or Route 53." },
+        { "title": "HTTPS Security", "icon": "🔒", "body": "S3 websites are HTTP-only. For HTTPS, use CloudFront with an SSL certificate from AWS Certificate Manager." },
+        { "title": "Performance", "icon": "⚡", "body": "CloudFront also speeds up your site by caching it at edge locations worldwide." },
+        { "title": "Cost", "icon": "💰", "body": "S3 hosting is very affordable - typically just a few cents per month for small websites." }
+      ]
+    },
+    {
+      "type": "code",
+      "title": "📄 Sample index.html File",
+      "body": "Minimal HTML to get started:",
+      "code": {
+        "language": "html",
+        "content": "<!doctype html>\n<html>\n<head>\n  <meta charset=\"utf-8\" />\n  <title>mysitename.com</title>\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n</head>\n<body>\n  <h1>Hello from S3!</h1>\n  <p>This is a single-page site served from S3.</p>\n</body>\n</html>"
+      }
+    },
+    {
+      "type": "cards",
+      "title": "🔧 Troubleshooting Tips",
+      "items": [
+        { "title": "403 Forbidden Error", "icon": "❌", "body": "Check that your bucket policy allows public access and that Block public access is turned off." },
+        { "title": "Changes Not Showing", "icon": "🔄", "body": "S3 updates can take a few minutes. Try refreshing your browser or clearing cache." },
+        { "title": "Mobile Testing", "icon": "📱", "body": "Test your site on different devices and browsers to ensure it works well everywhere." },
+        { "title": "SEO Friendly", "icon": "🔍", "body": "Include proper meta tags, alt text for images, and descriptive page titles for better search engine visibility." }
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Thanks for learning AWS S3 hosting with Grandma! ☁️",
+    "text": "Remember: The cloud is just someone else's computer, but it's a very reliable computer!"
+  },
+  "card": {
+    "title": "Host a Website on AWS S3",
+    "summary": "Simple step-by-step guide to hosting your static website on Amazon S3 - reliable, affordable, and scalable!",
+    "emoji": "☁️"
+  },
+  "seo": {
+    "title": "Host a Website on AWS S3 - Geeky Grands",
+    "description": "A straightforward static site hosting guide for Amazon S3 with CLI and console steps."
+  }
+}

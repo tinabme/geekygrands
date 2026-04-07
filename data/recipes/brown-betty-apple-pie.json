@@ -1,0 +1,83 @@
+{
+  "slug": "brown-betty-apple-pie",
+  "type": "recipe",
+  "title": "Brown Betty Apple Pie",
+  "subtitle": "My Grandma always brought a scrumptious pie to family gatherings - brown betty was one of my favorites",
+  "hero": {
+    "image": "images/gg-cook.jpg",
+    "imageAlt": "Apple pie on Grandma's kitchen table"
+  },
+  "meta": [
+    { "label": "Difficulty", "value": "3 Stars", "icon": "⭐" },
+    { "label": "Bake", "value": "45-55 mins", "icon": "🔥" },
+    { "label": "Serves", "value": "8", "icon": "👨‍👩‍👧‍👦" },
+    { "label": "Prep", "value": "Plan Ahead (Crust Chilling)", "icon": "⏰" }
+  ],
+  "story": {
+    "title": "A Family Gathering Favorite",
+    "paragraphs": [
+      "This Brown Betty Apple Pie holds such special memories for me. My grandmother would arrive at every family gathering with this beautiful pie, and we'd all gather around as she cut the first slice, watching that crumbly topping and perfectly spiced apples.",
+      "What makes this pie special is the brown sugar crumb topping that gets all golden and crunchy while the apples underneath become tender and sweet. It's like having apple pie and apple crisp all in one delicious dessert! 🥧✨"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "title": "For the Crust",
+      "icon": "🥧",
+      "items": [
+        "2 cups all-purpose flour",
+        "1 teaspoon salt",
+        "1 cup butter (very cold)",
+        "½ cup water (very cold)"
+      ]
+    },
+    {
+      "title": "For the Filling",
+      "icon": "🍎",
+      "items": [
+        "8-10 apples (sliced, cored, peeled)",
+        "½ cup sugar",
+        "¼ cup all-purpose flour",
+        "¼ teaspoon ground cinnamon",
+        "1 tablespoon lemon juice"
+      ]
+    },
+    {
+      "title": "For the Topping",
+      "icon": "🧈",
+      "items": [
+        "½ cup butter, softened",
+        "1 cup flour",
+        "1 cup brown sugar",
+        "1 tablespoon white sugar"
+      ]
+    }
+  ],
+  "steps": [
+    { "title": "Make the Crust", "body": "In a large bowl, combine flour and salt. Cut in cold butter until mixture resembles coarse crumbs. Drizzle in cold water and mix with a wooden spoon until mixture forms a chunky ball." },
+    { "title": "Chill the Dough", "body": "Divide dough in half and shape into balls. Wrap in plastic and refrigerate 4 hours or overnight. This is crucial for a flaky crust!" },
+    { "title": "Prepare the Crust", "body": "Roll out one dough ball on floured counter and place in pie pan. Save the other half for another pie or freeze it!" },
+    { "title": "Make the Filling", "body": "Heat oven to 400°F. In a large bowl, toss all filling ingredients together. Pour into pie crust, mounting apples toward the center." },
+    { "title": "Create the Topping", "body": "In a medium bowl, use your fingers to mix topping ingredients except the white sugar until crumbs form. Sprinkle evenly over pie, then sprinkle with white sugar." },
+    { "title": "Bake to Golden Perfection", "body": "Bake for 45 to 55 minutes until pie crust and crumb topping are golden brown and filling begins to bubble. Transfer to cooling rack." }
+  ],
+  "tips": [
+    { "title": "Protect the Crust", "icon": "🛡️", "body": "To avoid overcooking the crust rim, lay a little foil around the rim about ¾ of the way through cooking." },
+    { "title": "Cold is Key", "icon": "❄️", "body": "Really cold butter and water are essential for that perfect flaky crust. Trust the process!" },
+    { "title": "Apple Selection", "icon": "🍎", "body": "Mix sweet and tart apples for the best flavor - Granny Smith and Honeycrisp work beautifully together." },
+    { "title": "Patience Pays", "icon": "⏰", "body": "Don't skip the chilling time for the dough - it makes all the difference in texture!" }
+  ],
+  "footer": {
+    "heading": "Happy Baking!",
+    "text": "This pie brings families together - serve it warm with vanilla ice cream for the ultimate comfort dessert! 💕"
+  },
+  "card": {
+    "title": "Brown Betty Apple Pie",
+    "summary": "A family gathering favorite with the most amazing brown sugar crumb topping that gets golden and crunchy.",
+    "emoji": "🥧"
+  },
+  "seo": {
+    "title": "Brown Betty Apple Pie - Geeky Grands",
+    "description": "An apple pie with a golden crumb topping that feels like apple crisp and pie in one dessert."
+  }
+}

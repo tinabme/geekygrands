@@ -1,0 +1,22 @@
+{
+  "recipes": [
+    "apple-pie-recipe",
+    "brown-betty-apple-pie",
+    "7up-biscuits",
+    "buttermilk-biscuits",
+    "chicken-noodle-soup",
+    "chicken-pot-pie",
+    "flaky-pecan-pie",
+    "pineapple-upside-down",
+    "white-chicken-chili"
+  ],
+  "tips": [
+    "docker-nodejs-guide",
+    "sql-snippets-guide",
+    "phone-tips",
+    "s3-website-hosting",
+    "herbs-hair-care",
+    "stain-removal-guide",
+    "essential-oils-guide"
+  ]
+}
