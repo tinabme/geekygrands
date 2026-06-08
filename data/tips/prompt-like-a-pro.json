@@ -1,0 +1,95 @@
+{
+  "slug": "prompt-like-a-pro",
+  "type": "tip",
+  "title": "Prompt Like a Pro: 10 LLM Tricks That Actually Work",
+  "subtitle": "Clear, practical prompting moves that get better answers with less back-and-forth.",
+  "hero": {
+    "image": "images/gg-tech.jpg",
+    "imageAlt": "LLM prompting guide"
+  },
+  "meta": [
+    { "label": "Level", "value": "Beginner to Intermediate", "icon": "🟢" },
+    { "label": "Type", "value": "How-To Guide", "icon": "🧠" },
+    { "label": "Category", "value": "AI Productivity", "icon": "🤖" }
+  ],
+  "intro": {
+    "title": "Why Prompts Matter",
+    "paragraphs": [
+      "A model can only work with what you give it. Better instructions usually mean better output.",
+      "Use these tricks as templates and adjust the wording for your project, audience, and output format."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "steps",
+      "title": "Core Prompting Moves",
+      "items": [
+        {
+          "title": "1) Define the role",
+          "body": "Tell the model who it is and what skillset to use.",
+          "code": { "language": "text", "content": "You are a senior editor. Rewrite this for clarity and tone for high school readers." }
+        },
+        {
+          "title": "2) Add context",
+          "body": "Include audience, goal, and constraints in plain language.",
+          "code": { "language": "text", "content": "Audience: non-technical managers\nGoal: one-page summary\nConstraints: avoid jargon, keep it under 180 words" }
+        },
+        {
+          "title": "3) Specify output format",
+          "body": "Ask for the shape you want, not just the content.",
+          "code": { "language": "text", "content": "Return: title, 5 bullet points, and a 2-line conclusion." }
+        },
+        {
+          "title": "4) Ask for options",
+          "body": "Get multiple variations and choose the best one.",
+          "code": { "language": "text", "content": "Give me 3 versions: concise, friendly, and formal." }
+        },
+        {
+          "title": "5) Ask for a self-check",
+          "body": "Have the model verify if it followed your rules.",
+          "code": { "language": "text", "content": "Before finalizing, confirm you met every constraint in a checklist." },
+          "callout": { "variant": "tip", "text": "This catches missing pieces before you paste the output somewhere else." }
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "Fix Weak Answers Fast",
+      "items": [
+        {
+          "title": "Be specific about what is wrong",
+          "body": "Replace vague feedback like \"better\" with exact edits.",
+          "code": { "language": "text", "content": "Too long. Cut 35%. Keep examples 1 and 3. Remove buzzwords." }
+        },
+        {
+          "title": "Use iterative prompts",
+          "body": "Ask for one improvement at a time: structure, then tone, then detail.",
+          "code": { "language": "text", "content": "Step 1: improve structure only.\nStep 2: make tone more conversational.\nStep 3: add one concrete example." }
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Common Mistakes to Avoid",
+      "items": [
+        { "title": "Too broad", "icon": "📏", "body": "If your request is vague, the answer will be vague." },
+        { "title": "No audience", "icon": "🎯", "body": "Always say who the output is for." },
+        { "title": "No format", "icon": "🧱", "body": "Ask for headings, bullets, tables, or JSON when needed." },
+        { "title": "One-shot only", "icon": "🔁", "body": "Refine in rounds instead of expecting perfect output once." }
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Prompting Is a Skill",
+    "text": "Good prompts are less about magic words and more about clear instructions."
+  },
+  "card": {
+    "title": "Prompt Like a Pro",
+    "summary": "10 practical LLM tricks for clearer prompts, stronger outputs, and faster revisions.",
+    "emoji": "🤖"
+  },
+  "seo": {
+    "title": "Prompt Like a Pro: LLM Tricks - Geeky Grands",
+    "description": "Simple and effective LLM prompting tricks, examples, and common mistakes to avoid."
+  }
+}

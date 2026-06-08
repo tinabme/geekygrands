@@ -1,0 +1,92 @@
+{
+  "slug": "small-but-mighty-slm",
+  "type": "tip",
+  "title": "Small but Mighty: SLM Options and Benefits",
+  "subtitle": "A plain-English guide to Small Language Models, where they fit, and why teams choose them.",
+  "hero": {
+    "image": "images/gg-tech.jpg",
+    "imageAlt": "Small language model guide"
+  },
+  "meta": [
+    { "label": "Level", "value": "Beginner", "icon": "🟢" },
+    { "label": "Type", "value": "Decision Guide", "icon": "🧭" },
+    { "label": "Category", "value": "AI Models", "icon": "🧠" }
+  ],
+  "intro": {
+    "title": "What Is an SLM?",
+    "paragraphs": [
+      "SLM stands for Small Language Model. Compared to large models, SLMs are usually faster, cheaper, and easier to run in restricted environments.",
+      "They are a strong fit when your tasks are focused, your budget matters, or you need lower-latency responses."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "steps",
+      "title": "Good SLM Use Cases",
+      "items": [
+        {
+          "title": "1) Classification tasks",
+          "body": "Examples: ticket routing, sentiment labels, FAQ tagging.",
+          "callout": { "variant": "tip", "text": "SLMs perform well when labels are clear and domain-specific." }
+        },
+        {
+          "title": "2) Structured extraction",
+          "body": "Pull names, dates, IDs, and fields from predictable documents.",
+          "code": { "language": "text", "content": "Input: invoice text\nOutput: { vendor, invoice_number, due_date, total }" }
+        },
+        {
+          "title": "3) Internal assistants",
+          "body": "Private Q and A over a known policy set or company handbook."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Benefits at a Glance",
+      "items": [
+        { "title": "Lower cost", "icon": "💸", "body": "Less compute per request can reduce operating costs." },
+        { "title": "Faster responses", "icon": "⚡", "body": "Smaller models often produce replies with lower latency." },
+        { "title": "Flexible deployment", "icon": "🖥️", "body": "Can be easier to run on edge devices or private infrastructure." },
+        { "title": "Focused behavior", "icon": "🎯", "body": "Narrow tasks can yield reliable outcomes with fewer prompts." }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "How to Pick an SLM",
+      "items": [
+        {
+          "title": "Measure your task",
+          "body": "Define what success means before testing models.",
+          "list": [
+            "Accuracy target",
+            "Latency budget",
+            "Cost per 1,000 requests",
+            "Privacy or hosting constraints"
+          ]
+        },
+        {
+          "title": "Run a small benchmark",
+          "body": "Test 20 to 50 real examples and score outputs side by side."
+        },
+        {
+          "title": "Keep a fallback",
+          "body": "Use a larger model only when confidence is low.",
+          "callout": { "variant": "note", "text": "A two-tier setup can save money while keeping quality high for hard cases." }
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Right-Sized AI Wins",
+    "text": "The best model is not always the biggest one. It is the one that fits the job."
+  },
+  "card": {
+    "title": "Small but Mighty SLM",
+    "summary": "A simple guide to SLM options, ideal use cases, and the benefits of right-sized AI models.",
+    "emoji": "🧠"
+  },
+  "seo": {
+    "title": "Small but Mighty: SLM Options and Benefits - Geeky Grands",
+    "description": "Understand small language model options, benefits, and how to choose one for your use case."
+  }
+}
