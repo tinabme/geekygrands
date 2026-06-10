@@ -286,7 +286,7 @@ function renderTipBody(content, contentType = 'tip') {
     }).join('');
 
     const backLinkHref = contentType === 'post' ? 'index.html#thought-shelf' : 'index.html#study';
-    const backLinkClass = contentType === 'post' ? 'back-to-study' : 'back-to-study';
+    const backLinkClass = 'back-to-study';
     const backLinkText = contentType === 'post'
         ? '📝 Back to the Thought Shelf for More Reflections'
         : '📚 Back to the Study for More Topics';
