@@ -257,7 +257,7 @@ function renderTipHeader(content) {
     `;
 }
 
-function renderTipBody(content) {
+function renderTipBody(content, contentType = 'tip') {
     const root = document.getElementById('tip-root');
     const intro = content.intro
         ? `
@@ -285,11 +285,17 @@ function renderTipBody(content) {
         }
     }).join('');
 
+    const backLinkHref = contentType === 'post' ? 'index.html#thought-shelf' : 'index.html#study';
+    const backLinkClass = 'back-to-study';
+    const backLinkText = contentType === 'post'
+        ? '📝 Back to the Thought Shelf for More Reflections'
+        : '📚 Back to the Study for More Topics';
+
     root.innerHTML = `
         ${intro}
         ${blocks}
         <section class="back-link-section">
-            <a href="index.html#study" class="back-to-study">📚 Back to the Study for More Topics</a>
+            <a href="${backLinkHref}" class="${backLinkClass}">${backLinkText}</a>
         </section>
     `;
 
@@ -321,9 +327,14 @@ async function loadContentPage() {
         return;
     }
 
-    const dataPath = contentType === 'recipe'
-        ? `data/recipes/${encodeURIComponent(slug)}.json`
-        : `data/tips/${encodeURIComponent(slug)}.json`;
+    let dataPath = '';
+    if (contentType === 'recipe') {
+        dataPath = `data/recipes/${encodeURIComponent(slug)}.json`;
+    } else if (contentType === 'post') {
+        dataPath = `data/posts/${encodeURIComponent(slug)}.json`;
+    } else {
+        dataPath = `data/tips/${encodeURIComponent(slug)}.json`;
+    }
 
     try {
         const response = await fetch(dataPath);
@@ -341,7 +352,7 @@ async function loadContentPage() {
         }
 
         renderTipHeader(content);
-        renderTipBody(content);
+        renderTipBody(content, contentType);
     } catch (error) {
         renderError('This page could not be loaded. Use a local web server and verify the slug exists in the data folder.');
         console.error(error);
