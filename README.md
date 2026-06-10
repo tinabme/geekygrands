@@ -12,8 +12,9 @@ Some pages now have a JSON-backed template path:
 - `recipe.html?slug=apple-pie-recipe`
 - `tip.html?slug=docker-nodejs-guide`
 - `tip.html?slug=essential-oils-guide`
+- `post.html?slug=managing-through-the-ai-shift`
 
-The content for those pages lives in `data/recipes/` and `data/tips/`.
+The content for those pages lives in `data/recipes/`, `data/tips/`, and `data/posts/`.
 
 Homepage cards are now also data-driven via `data/homepage.json` and loaded by `homepage-loader.js`.
 

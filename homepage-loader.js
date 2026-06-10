@@ -39,6 +39,22 @@ function renderTipCard(entry) {
     `;
 }
 
+function renderPostCard(entry) {
+    const title = escapeText(entry.card?.title || entry.title || 'Untitled Post');
+    const summary = escapeText(entry.card?.summary || '');
+    const dateLabel = escapeText(entry.meta?.find(item => item.label === 'Published')?.value || 'Recent Reflection');
+    const slug = encodeURIComponent(entry.slug);
+
+    return `
+        <article class="blog-card">
+            <div class="blog-date">${dateLabel}</div>
+            <h4>${title}</h4>
+            <p>${summary}</p>
+            <a href="post.html?slug=${slug}" class="blog-link">Read Reflection →</a>
+        </article>
+    `;
+}
+
 async function loadJson(path) {
     const response = await fetch(path);
     if (!response.ok) {
@@ -50,6 +66,7 @@ async function loadJson(path) {
 async function loadHomepageCards() {
     const recipeRoot = document.getElementById('recipe-cards-root');
     const tipRoot = document.getElementById('tip-cards-root');
+    const postRoot = document.getElementById('post-cards-root');
 
     if (!recipeRoot || !tipRoot) {
         return;
@@ -57,6 +74,9 @@ async function loadHomepageCards() {
 
     recipeRoot.setAttribute('aria-busy', 'true');
     tipRoot.setAttribute('aria-busy', 'true');
+    if (postRoot) {
+        postRoot.setAttribute('aria-busy', 'true');
+    }
 
     try {
         const manifest = await loadJson('data/homepage.json');
@@ -69,8 +89,18 @@ async function loadHomepageCards() {
             (manifest.tips || []).map(slug => loadJson(`data/tips/${encodeURIComponent(slug)}.json`))
         );
 
+        const postEntries = await Promise.all(
+            (manifest.posts || []).map(slug => loadJson(`data/posts/${encodeURIComponent(slug)}.json`))
+        );
+
         recipeRoot.innerHTML = recipeEntries.map(renderRecipeCard).join('');
         tipRoot.innerHTML = tipEntries.map(renderTipCard).join('');
+        if (postRoot) {
+            postRoot.innerHTML = postEntries.length
+                ? postEntries.map(renderPostCard).join('')
+                : '<p class="home-data-error">Thought Shelf is waiting for its first post.</p>';
+            postRoot.setAttribute('aria-busy', 'false');
+        }
         recipeRoot.setAttribute('aria-busy', 'false');
         tipRoot.setAttribute('aria-busy', 'false');
 
@@ -78,6 +108,10 @@ async function loadHomepageCards() {
     } catch (error) {
         recipeRoot.innerHTML = '<p class="home-data-error">Recipe cards are temporarily unavailable right now.</p>';
         tipRoot.innerHTML = '<p class="home-data-error">Study cards are temporarily unavailable right now.</p>';
+        if (postRoot) {
+            postRoot.innerHTML = '<p class="home-data-error">Thought Shelf posts are temporarily unavailable right now.</p>';
+            postRoot.setAttribute('aria-busy', 'false');
+        }
         recipeRoot.setAttribute('aria-busy', 'false');
         tipRoot.setAttribute('aria-busy', 'false');
         console.error(error);

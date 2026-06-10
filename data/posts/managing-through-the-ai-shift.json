@@ -1,0 +1,112 @@
+{
+  "slug": "managing-through-the-ai-shift",
+  "type": "post",
+  "title": "Managing Through the AI Shift: A Practical Guide for Engineering Managers",
+  "subtitle": "How to lead with clarity, use AI responsibly, and keep your team grounded while everything moves fast.",
+  "hero": {
+    "image": "images/gg-tech.jpg",
+    "imageAlt": "Engineering leadership reflection"
+  },
+  "meta": [
+    { "label": "Published", "value": "June 2026", "icon": "🗓️" },
+    { "label": "Read", "value": "9 min", "icon": "⏱️" },
+    { "label": "Topic", "value": "Engineering Management", "icon": "🧭" }
+  ],
+  "intro": {
+    "title": "You Are Not Behind",
+    "paragraphs": [
+      "If you are managing in this AI era and feel pulled in ten directions, you are in good company. The role is changing quickly, and the pressure is real.",
+      "The shift is not just about writing code faster. It is about orchestrating systems, protecting quality, and helping people navigate uncertainty without panic.",
+      "Think of AI as an eager junior teammate: capable, fast, and useful with the right guidance. Your job is to provide that guidance."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "steps",
+      "title": "Five Moves That Make a Big Difference",
+      "items": [
+        {
+          "title": "1) Shift from code creation to AI output management",
+          "body": "Treat AI coding tools like junior developers. They can draft quickly, but they still need clear direction, review, and correction.",
+          "callout": { "variant": "tip", "text": "In AI-assisted teams, review quality becomes a bigger multiplier than typing speed." }
+        },
+        {
+          "title": "2) Standardize context and scaffolding",
+          "body": "AI performs better when your team has clean architecture notes, API specs, coding standards, and decision records. Tribal knowledge does not scale.",
+          "callout": { "variant": "note", "text": "Documenting decisions clearly helps both humans and AI stay aligned." }
+        },
+        {
+          "title": "3) Build practical AI literacy",
+          "body": "You do not need to become an ML researcher. You do need enough literacy to make good decisions: prompt context limits, API rate limits, and reliability patterns such as RAG evaluation and guardrails."
+        },
+        {
+          "title": "4) Use AI to scale your own manager workflows",
+          "body": "Managers lose hours to status summaries, updates, and prep. Use AI to draft sprint narratives, summarize pull request themes, and scaffold meeting docs so your time goes to people and decisions."
+        },
+        {
+          "title": "5) Double down on human leadership",
+          "body": "As routine work gets automated, empathy, trust, product judgment, and stakeholder communication matter more. Help your team focus on why a problem matters, not just how fast it can be built."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "A Simple Weekly Manager Checklist",
+      "items": [
+        { "title": "Outcome Over Activity", "icon": "🎯", "body": "Did AI usage improve business outcomes, or just increase output volume?" },
+        { "title": "Architecture Health", "icon": "🧱", "body": "Did faster code delivery increase hidden complexity or maintenance risk?" },
+        { "title": "Context Quality", "icon": "📚", "body": "Are docs, ADRs, and standards up to date enough for humans and AI to succeed?" },
+        { "title": "Team Confidence", "icon": "🤝", "body": "Who is anxious, blocked, or under-supported right now?" },
+        { "title": "Learning Loop", "icon": "🔁", "body": "What did we test, what did we learn, and what do we change next week?" }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Reference Sources",
+      "items": [
+        {
+          "title": "The Future of Engineering Management in the Age of AI",
+          "icon": "🔗",
+          "links": [
+            {
+              "label": "Read on Medium",
+              "href": "https://medium.com/@seba_hurtado/the-future-of-engineering-management-in-the-age-of-ai-88f995d69965"
+            }
+          ]
+        },
+        {
+          "title": "5 Ways I am Using AI as an Engineering Manager",
+          "icon": "🔗",
+          "links": [
+            {
+              "label": "Read on LinkedIn",
+              "href": "https://www.linkedin.com/posts/emmabostian_5-ways-im-using-ai-as-an-engineering-manager-activity-7411705079789051904-VSRH"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "title": "Final Thought",
+      "paragraphs": [
+        "The best engineering managers in this season are not the ones with the most AI tools. They are the ones who create clarity, protect quality, and grow people through change.",
+        "Lead with calm. Document what matters. Keep the team focused on meaningful problems. That is real leverage."
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Lead The Team You Have, In The Moment You Are In",
+    "text": "In uncertain times, clear priorities and human care are still the strongest tools in the room."
+  },
+  "card": {
+    "title": "Managing Through the AI Shift",
+    "summary": "A practical, people-first guide to managing engineering teams as AI changes how software gets built.",
+    "emoji": "🧭"
+  },
+  "seo": {
+    "title": "Managing Through the AI Shift - Geeky Grands",
+    "description": "A practical guide for engineering managers on AI adoption, team leadership, and maintaining quality under rapid change."
+  }
+}

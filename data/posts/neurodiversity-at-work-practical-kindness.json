@@ -1,0 +1,88 @@
+{
+  "slug": "neurodiversity-at-work-practical-kindness",
+  "type": "post",
+  "title": "Neurodiversity at Work: Practical Kindness Beats Perfect Policy",
+  "subtitle": "Clear communication, flexibility, and thoughtful team habits help people do their best work.",
+  "hero": {
+    "image": "images/gg-tech.jpg",
+    "imageAlt": "Neurodiversity reflection"
+  },
+  "meta": [
+    { "label": "Published", "value": "June 2026", "icon": "🗓️" },
+    { "label": "Read", "value": "8 min", "icon": "⏱️" },
+    { "label": "Topic", "value": "Work and Belonging", "icon": "🌱" }
+  ],
+  "intro": {
+    "title": "Different Brains, Shared Workplace",
+    "paragraphs": [
+      "Roughly 15 to 20% of people are neurodivergent. Neurodiversity is a natural variation in how brains process information, communicate, and solve problems.",
+      "Most workplace norms were built around neurotypical defaults. That can unintentionally create friction for people who process language, pace, or social interaction differently.",
+      "Support is not about lowering expectations. It is about removing avoidable barriers so people can contribute their strengths in meaningful, high-impact ways."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "steps",
+      "title": "Four Practical Changes Leaders Can Make Right Away",
+      "items": [
+        {
+          "title": "1) Lead with clear communication",
+          "body": "Share agendas ahead of time, define decisions clearly, and write down action items. This reduces guesswork and helps everyone prepare in a way that fits their processing style."
+        },
+        {
+          "title": "2) Make expectations explicit",
+          "body": "Do not rely on unwritten rules. Clarify what done means, response-time expectations, and escalation paths so no one has to decode hidden norms."
+        },
+        {
+          "title": "3) Offer flexibility in how work gets done",
+          "body": "Some people think best out loud, others need quiet processing time and written follow-ups. Design team workflows that allow multiple communication paths.",
+          "callout": { "variant": "tip", "text": "When people can process information in their best format, output quality usually improves for the whole team." }
+        },
+        {
+          "title": "4) Normalize strength-based support",
+          "body": "A person may need more time in one area and still be exceptional in others, such as pattern recognition, systems thinking, creativity, empathy, or connecting ideas others miss."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "From Personal Experience",
+      "items": [
+        { "title": "What I know", "icon": "🧠", "body": "As someone who is dyslexic and dysgraphic, I know I will not be the fastest reader in the room, and rapid-fire discussions can be hard." },
+        { "title": "What I have learned", "icon": "🌿", "body": "That same processing style can also support deeper pattern recognition, creative problem solving, and stronger empathy in technical and human systems." },
+        { "title": "What teams can do", "icon": "🤝", "body": "Patience, written follow-ups, clear structure, and psychological safety help people share what works for them and contribute at a higher level." }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "A Better Question For Managers",
+      "items": [
+        { "title": "Not this", "icon": "❌", "body": "How do we make this person fit our existing process?" },
+        { "title": "Try this", "icon": "✅", "body": "Which parts of our process create avoidable friction, and how can we redesign them?" },
+        { "title": "Result", "icon": "🌟", "body": "More clarity, less hidden effort, and better outcomes for everyone." }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "title": "Final Thought",
+      "paragraphs": [
+        "Inclusion is not a single policy. It is hundreds of small decisions made every week.",
+        "When leaders combine clarity, flexibility, and care, teams become both more humane and more effective."
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Design For Humans, Not Just Throughput",
+    "text": "Teams that feel safe to think differently usually build better things."
+  },
+  "card": {
+    "title": "Neurodiversity at Work",
+    "summary": "Practical, strength-based ways to build neuroinclusive teams through clarity, flexibility, and better norms.",
+    "emoji": "🌱"
+  },
+  "seo": {
+    "title": "Neurodiversity at Work: Practical Kindness - Geeky Grands",
+    "description": "A practical reflection on building neuroinclusive work environments through clear communication, flexibility, and strength-based support."
+  }
+}

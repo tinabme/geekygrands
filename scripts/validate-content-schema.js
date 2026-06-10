@@ -6,6 +6,7 @@ const path = require('path');
 const rootDir = path.resolve(__dirname, '..');
 const recipesDir = path.join(rootDir, 'data', 'recipes');
 const tipsDir = path.join(rootDir, 'data', 'tips');
+const postsDir = path.join(rootDir, 'data', 'posts');
 const homepageManifestPath = path.join(rootDir, 'data', 'homepage.json');
 
 const errors = [];
@@ -96,6 +97,35 @@ function validateTip(entry, filename) {
     }
 }
 
+function validatePost(entry, filename) {
+    const context = `post ${filename}`;
+    if (entry.type !== 'post') {
+        errors.push(`${context}: type must be "post"`);
+    }
+
+    if (!isNonEmptyString(entry.slug)) {
+        errors.push(`${context}: missing slug`);
+    }
+
+    if (!isNonEmptyString(entry.title)) {
+        errors.push(`${context}: missing title`);
+    }
+
+    if (!isNonEmptyString(entry.subtitle)) {
+        errors.push(`${context}: missing subtitle`);
+    }
+
+    if (!Array.isArray(entry.blocks) || entry.blocks.length === 0) {
+        errors.push(`${context}: blocks must be a non-empty array`);
+    }
+
+    validateCard(entry.card, context);
+
+    if (entry.slug && `${entry.slug}.json` !== filename) {
+        errors.push(`${context}: slug does not match filename`);
+    }
+}
+
 function validateDirectory(dirPath, validator) {
     const files = fs.readdirSync(dirPath).filter(name => name.endsWith('.json'));
     const slugs = new Set();
@@ -122,7 +152,7 @@ function validateDirectory(dirPath, validator) {
     return slugs;
 }
 
-function validateHomepageManifest(recipeSlugs, tipSlugs) {
+function validateHomepageManifest(recipeSlugs, tipSlugs, postSlugs) {
     let manifest;
     try {
         manifest = readJson(homepageManifestPath);
@@ -150,12 +180,25 @@ function validateHomepageManifest(recipeSlugs, tipSlugs) {
             }
         });
     }
+
+    if (manifest.posts !== undefined && !Array.isArray(manifest.posts)) {
+        errors.push('data/homepage.json: posts must be an array when provided');
+    } else if (Array.isArray(manifest.posts)) {
+        manifest.posts.forEach(slug => {
+            if (!postSlugs.has(slug)) {
+                errors.push(`data/homepage.json: posts slug "${slug}" not found in data/posts`);
+            }
+        });
+    }
 }
 
 function main() {
     const recipeSlugs = validateDirectory(recipesDir, validateRecipe);
     const tipSlugs = validateDirectory(tipsDir, validateTip);
-    validateHomepageManifest(recipeSlugs, tipSlugs);
+    const postSlugs = fs.existsSync(postsDir)
+        ? validateDirectory(postsDir, validatePost)
+        : new Set();
+    validateHomepageManifest(recipeSlugs, tipSlugs, postSlugs);
 
     if (errors.length > 0) {
         console.error('Schema validation failed:');
