@@ -6,8 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href') || '';
+
+            // Only intercept same-page hash links (e.g. #study).
+            // Let regular navigation links (e.g. index.html, post.html?slug=...) work normally.
+            if (!href.startsWith('#')) {
+                return;
+            }
+
             e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
+            const targetId = href.substring(1);
             const targetSection = document.getElementById(targetId);
             
             if (targetSection) {

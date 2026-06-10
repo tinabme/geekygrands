@@ -42,7 +42,8 @@ function renderTipCard(entry) {
 function renderPostCard(entry) {
     const title = escapeText(entry.card?.title || entry.title || 'Untitled Post');
     const summary = escapeText(entry.card?.summary || '');
-    const dateLabel = escapeText(entry.meta?.find(item => item.label === 'Published')?.value || 'Recent Reflection');
+    const meta = Array.isArray(entry.meta) ? entry.meta : [];
+    const dateLabel = escapeText(meta.find(item => item.label === 'Published')?.value || 'Recent Reflection');
     const slug = encodeURIComponent(entry.slug);
 
     return `
