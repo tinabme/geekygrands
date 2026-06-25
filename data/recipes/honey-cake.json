@@ -1,0 +1,129 @@
+{
+  "slug": "honey-cake",
+  "type": "recipe",
+  "title": "Simple Sunday Honey Cake",
+  "subtitle": "A tender, cozy cake sweetened with honey and perfect with tea or coffee",
+  "hero": {
+    "image": "images/gg-cook.jpg",
+    "imageAlt": "Homestyle honey cake"
+  },
+  "meta": [
+    { "label": "Prep", "value": "15 mins", "icon": "⏰" },
+    { "label": "Bake", "value": "35 mins", "icon": "🔥" },
+    { "label": "Serves", "value": "8", "icon": "👨‍👩‍👧‍👦" },
+    { "label": "Difficulty", "value": "Easy", "icon": "⭐" }
+  ],
+  "story": {
+    "title": "A Little Cake with a Big Hug",
+    "paragraphs": [
+      "This is one of those dependable cakes I make when I want something sweet but simple. No fancy layers, no fussy frosting, just a soft crumb and warm honey flavor that makes the whole kitchen smell like comfort.",
+      "I call it Sunday Honey Cake because it is lovely for slow afternoons, catch-up chats, or a quiet treat after dinner. If you can stir and pour, you can make this one, dear. 🍯"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "title": "For the Cake",
+      "icon": "🍯",
+      "items": [
+        "2 cups all-purpose flour",
+        "1½ tsp baking powder",
+        "½ tsp baking soda",
+        "½ tsp salt",
+        "1 tsp ground cinnamon",
+        "2 large eggs",
+        "½ cup packed brown sugar",
+        "½ cup honey",
+        "½ cup neutral oil",
+        "¾ cup plain yogurt or sour cream",
+        "1 tsp vanilla extract"
+      ]
+    },
+    {
+      "title": "For the Honey Glaze (Optional)",
+      "icon": "✨",
+      "items": [
+        "2 tbsp honey",
+        "1 tbsp warm water",
+        "Pinch of cinnamon"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prep the Pan and Oven",
+      "body": "Preheat your oven to 350°F. Grease and line an 8-inch square pan or 9-inch round cake pan with parchment paper so the cake lifts out easily."
+    },
+    {
+      "title": "Mix the Dry Ingredients",
+      "body": "In a medium bowl, whisk together flour, baking powder, baking soda, salt, and cinnamon. Set aside."
+    },
+    {
+      "title": "Whisk the Wet Ingredients",
+      "body": "In a large bowl, whisk eggs, brown sugar, honey, oil, yogurt, and vanilla until smooth and creamy."
+    },
+    {
+      "title": "Bring It All Together",
+      "body": "Add the dry ingredients to the wet ingredients and gently fold just until no dry streaks remain. Do not overmix; a gentle hand keeps the cake tender."
+    },
+    {
+      "title": "Bake Until Golden",
+      "body": "Pour batter into the prepared pan and bake for 30 to 35 minutes, or until the top is golden and a toothpick in the center comes out clean."
+    },
+    {
+      "title": "Finish and Cool",
+      "body": "Let cake cool in the pan for 10 minutes, then move to a rack. If using glaze, stir honey, warm water, and cinnamon together and brush over the warm cake."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Choose Mild Honey",
+      "icon": "🐝",
+      "body": "A mild floral honey gives sweetness without overpowering the cake. Strong buckwheat honey can taste a bit bold here."
+    },
+    {
+      "title": "Keep It Moist",
+      "icon": "💛",
+      "body": "Yogurt or sour cream gives this cake its soft texture. Full-fat versions make it extra tender."
+    },
+    {
+      "title": "Perfect Pairing",
+      "icon": "☕",
+      "body": "This cake is wonderful with black tea, coffee, or a little dollop of whipped cream if you are feeling fancy."
+    },
+    {
+      "title": "Make Ahead Friendly",
+      "icon": "📦",
+      "body": "It tastes even better the next day. Store covered at room temperature for up to 2 days, or refrigerate for 4 days."
+    }
+  ],
+  "variations": [
+    {
+      "title": "Orange Honey Cake",
+      "icon": "🍊",
+      "body": "Add 1 tablespoon orange zest to the batter for a bright citrus note."
+    },
+    {
+      "title": "Walnut Crunch",
+      "icon": "🌰",
+      "body": "Fold in ½ cup chopped walnuts for a lovely little bite in each slice."
+    },
+    {
+      "title": "Apple Honey Version",
+      "icon": "🍎",
+      "body": "Fold in 1 cup finely diced apple and add 5 extra minutes of bake time."
+    }
+  ],
+  "footer": {
+    "heading": "Sweet, Simple, and Full of Comfort",
+    "text": "When life feels busy, a simple honey cake and a warm cup can make everything feel softer."
+  },
+  "card": {
+    "title": "Simple Sunday Honey Cake",
+    "summary": "A tender one-bowl honey cake with cozy cinnamon notes and an optional light honey glaze.",
+    "emoji": "🍯"
+  },
+  "seo": {
+    "title": "Simple Sunday Honey Cake - Geeky Grands",
+    "description": "An easy, cozy honey cake recipe with simple pantry ingredients and warm homemade flavor."
+  }
+}
