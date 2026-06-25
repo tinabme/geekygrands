@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             showWelcomeMessage();
         });
     }
-    
+
     attachCardHoverEffects();
     
     // Intersection Observer for fade-in animations

@@ -85,7 +85,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .logo {
@@ -112,7 +112,8 @@ h4 {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: var(--spacing-md);
+    gap: 0.65rem;
+    flex-wrap: nowrap;
 }
 
 .nav-link {
@@ -120,7 +121,8 @@ h4 {
     color: var(--warm-brown);
     font-family: var(--font-sans);
     font-weight: 500;
-    padding: var(--spacing-xs) var(--spacing-sm);
+    padding: 0.45rem 0.75rem;
+    font-size: 0.95rem;
     border-radius: 25px;
     transition: all 0.3s ease;
     border: 2px solid transparent;
@@ -758,6 +760,7 @@ h4 {
     .hero-title {
         font-size: 2rem;
     }
+
     
     .welcome-mat {
         padding: var(--spacing-md);
