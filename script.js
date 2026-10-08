@@ -1,6 +1,9 @@
 // Grandma's House JavaScript - Adding Interactive Magic
 
 document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.footer-bottom p').forEach(footerText => {
+        footerText.textContent = footerText.textContent.replace(/\b\d{4}\b/, String(new Date().getFullYear()));
+    });
     
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-link');
