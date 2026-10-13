@@ -46,7 +46,7 @@ function renderPostCard(entry) {
     const dateLabel = escapeText(meta.find(item => item.label === 'Published')?.value || '');
     const slug = encodeURIComponent(entry.slug);
 
-    if (meta.some(item => item.label === 'Topic' && item.value === 'Faith & Devotion')) {
+    if (meta.some(item => item.label === 'Topic' && item.value === 'Simple Faith')) {
         const subtitle = escapeText(entry.subtitle || '');
         const paragraphs = (entry.intro?.paragraphs || [])
             .map(paragraph => `<p>${escapeText(paragraph)}</p>`)
@@ -129,7 +129,7 @@ async function loadHomepageCards() {
         );
 
         const faithEntries = postEntries.filter(entry =>
-            entry.meta?.some(item => item.label === 'Topic' && item.value === 'Faith & Devotion')
+            entry.meta?.some(item => item.label === 'Topic' && item.value === 'Simple Faith')
         );
         const reflectionEntries = postEntries.filter(entry => !faithEntries.includes(entry));
 
