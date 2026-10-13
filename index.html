@@ -21,9 +21,9 @@
             </h1>
             <ul class="nav-menu">
                 <li><a href="#kitchen" class="nav-link">🍳 The Kitchen</a></li>
-                <li><a href="#study" class="nav-link">📚 Study & Wisdom</a></li>
-                <li><a href="#thought-shelf" class="nav-link">📝 Thought Shelf</a></li>
-                <li><a href="#garden" class="nav-link">🌸 The Garden</a></li>
+                <li><a href="#garden" class="nav-link">🌿 Home & Garden</a></li>
+                <li><a href="#study" class="nav-link">💻 Tech & Thoughts</a></li>
+                <li><a href="#faith" class="nav-link">🙏 Faith & Devotion</a></li>
                 <li><a href="#top" class="nav-link">🏠 Home</a></li>
             </ul>
         </div>
@@ -74,19 +74,72 @@
         </div>
     </section>
 
+    <!-- Garden Section -->
+    <section id="garden" class="room garden-room">
+        <div class="room-container">
+            <div class="garden-hero">
+                <div class="garden-hero-image"></div>
+                <div class="garden-hero-content">
+                    <h3>🌿 Home & Garden</h3>
+                    <p>Practical wisdom for tending your home and garden</p>
+                </div>
+            </div>
+
+            <h4 class="home-garden-subheading">Garden Wisdom</h4>
+            <div class="wisdom-cards">
+                <div class="wisdom-card">
+                    <span class="quote-mark">🌱</span>
+                    <h4>Start Small, Dream Big</h4>
+                    <p>Every master gardener started with a single seed. Don't be overwhelmed by big garden dreams - begin with a few pots on the windowsill or a small patch in the yard. Success breeds confidence, and before you know it, you'll be expanding your green kingdom!</p>
+                    <span class="wisdom-author">- Garden Basics</span>
+                </div>
+                <div class="wisdom-card">
+                    <span class="quote-mark">💧</span>
+                    <h4>Water Wisdom</h4>
+                    <p>The best time to water is early morning - plants can drink up before the heat of the day. Stick your finger into the soil; if it's dry an inch down, it's time to water. Remember: it's better to water deeply less often than to sprinkle lightly every day.</p>
+                    <span class="wisdom-author">- Watering Tips</span>
+                </div>
+                <div class="wisdom-card">
+                    <span class="quote-mark">🌿</span>
+                    <h4>Seasonal Gardening</h4>
+                    <p>Each season brings its own magic and tasks. Spring is for planting and hope, summer for tending and harvesting, fall for preparing and preserving, winter for planning and dreaming. Embrace the rhythm - your garden will thank you for it!</p>
+                    <span class="wisdom-author">- Year-Round Care</span>
+                </div>
+                <div class="wisdom-card">
+                    <span class="quote-mark">🦋</span>
+                    <h4>Welcome the Helpers</h4>
+                    <p>A healthy garden is full of life! Plant flowers that attract bees and butterflies, leave space for beneficial insects, and remember that not every bug is a pest. Sometimes the best gardening advice is to step back and let nature do what it does best.</p>
+                    <span class="wisdom-author">- Natural Balance</span>
+                </div>
+            </div>
+
+            <h4 class="home-garden-subheading">Everyday Home Tips</h4>
+            <div id="household-tip-cards-root" class="tech-tips" aria-live="polite" aria-busy="true">
+                <article class="tech-card home-skeleton-card" aria-hidden="true">
+                    <div class="home-skeleton-circle"></div>
+                    <div class="home-skeleton-line home-skeleton-title"></div>
+                    <div class="home-skeleton-line"></div>
+                    <div class="home-skeleton-line home-skeleton-short"></div>
+                    <div class="home-skeleton-pill"></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- The Study Section -->
     <section id="study" class="room study-room">
         <div class="room-container">
             <!-- Study Hero Section -->
             <div class="study-hero">
                 <div class="study-hero-content">
-                    <h3>📚 Grandma's Study Corner</h3>
-                    <p>Learning never gets old, dear - let's explore together!</p>
+                    <h3>💻 Tech & Thoughts</h3>
+                    <p>Technology guides and reflections on work, life, and learning</p>
                     <p>Need a simple website, or curious about AI training?</p><a class="tech-link" href="websites-ai.html">See how I can help.</a>
                 </div>
                 <div class="study-hero-image"></div>
             </div>
             
+            <h4 class="study-subheading">Tech & Learning</h4>
             <div id="tip-cards-root" class="tech-tips" aria-live="polite" aria-busy="true">
                 <article class="tech-card home-skeleton-card" aria-hidden="true">
                     <div class="home-skeleton-circle"></div>
@@ -103,20 +156,10 @@
                     <div class="home-skeleton-pill"></div>
                 </article>
             </div>
-        </div>
-    </section>    
 
-    <!-- Thought Shelf Section -->
-    <section id="thought-shelf" class="room parlor-room">
-        <div class="room-container">
-            <div class="study-hero">
-                <div class="study-hero-content">
-                    <h3>📝 Thought Shelf</h3>
-                    <p>Honest reflections on work, life, learning, and being human in changing times.</p>
-                </div>
-                <div class="study-hero-image"></div>
-            </div>
-
+            <div id="thought-shelf" class="thought-shelf-group">
+                <h4 class="study-subheading">Thought Shelf</h4>
+                <p class="thought-shelf-intro">Reflections on work, life, learning, and being human in changing times.</p>
             <div id="post-cards-root" class="blog-preview" aria-live="polite" aria-busy="true">
                 <article class="blog-card home-skeleton-card" aria-hidden="true">
                     <div class="home-skeleton-line home-skeleton-title"></div>
@@ -131,50 +174,27 @@
                     <div class="home-skeleton-pill"></div>
                 </article>
             </div>
+            </div>
         </div>
     </section>
 
-    <!-- The Garden Section -->
-    <section id="garden" class="room garden-room">
+    <!-- Faith Section -->
+    <section id="faith" class="room parlor-room faith-room">
         <div class="room-container">
-            <!-- Garden Hero Section -->
-            <div class="garden-hero">
-                <div class="garden-hero-image"></div>
-                <div class="garden-hero-content">
-                    <h3>🌻 Grandma's Garden Wisdom</h3>
-                    <p>Growing beautiful things, one season at a time</p>
+            <div class="study-hero faith-hero">
+                <div class="study-hero-content">
+                    <h3>🙏 Faith & Devotion</h3>
+                    <p>Gentle reminders and encouragement for the walk of faith</p>
                 </div>
+                <div class="study-hero-image"></div>
             </div>
-            
-            <!-- Gardening Tips Grid -->
-            <div class="wisdom-cards">
-                <div class="wisdom-card">
-                    <span class="quote-mark">🌱</span>
-                    <h4>Start Small, Dream Big</h4>
-                    <p>Every master gardener started with a single seed. Don't be overwhelmed by big garden dreams - begin with a few pots on the windowsill or a small patch in the yard. Success breeds confidence, and before you know it, you'll be expanding your green kingdom!</p>
-                    <span class="wisdom-author">- Garden Basics</span>
-                </div>
-                
-                <div class="wisdom-card">
-                    <span class="quote-mark">💧</span>
-                    <h4>Water Wisdom</h4>
-                    <p>The best time to water is early morning - plants can drink up before the heat of the day. Stick your finger into the soil; if it's dry an inch down, it's time to water. Remember: it's better to water deeply less often than to sprinkle lightly every day.</p>
-                    <span class="wisdom-author">- Watering Tips</span>
-                </div>
-                
-                <div class="wisdom-card">
-                    <span class="quote-mark">🌿</span>
-                    <h4>Seasonal Gardening</h4>
-                    <p>Each season brings its own magic and tasks. Spring is for planting and hope, summer for tending and harvesting, fall for preparing and preserving, winter for planning and dreaming. Embrace the rhythm - your garden will thank you for it!</p>
-                    <span class="wisdom-author">- Year-Round Care</span>
-                </div>
-                
-                <div class="wisdom-card">
-                    <span class="quote-mark">🦋</span>
-                    <h4>Welcome the Helpers</h4>
-                    <p>A healthy garden is full of life! Plant flowers that attract bees and butterflies, leave space for beneficial insects, and remember that not every bug is a pest. Sometimes the best gardening advice is to step back and let nature do what it does best.</p>
-                    <span class="wisdom-author">- Natural Balance</span>
-                </div>
+
+            <div id="faith-cards-root" class="blog-preview" aria-live="polite" aria-busy="true">
+                <article class="blog-card home-skeleton-card" aria-hidden="true">
+                    <div class="home-skeleton-line home-skeleton-title"></div>
+                    <div class="home-skeleton-line"></div>
+                    <div class="home-skeleton-line home-skeleton-short"></div>
+                </article>
             </div>
         </div>
     </section>
