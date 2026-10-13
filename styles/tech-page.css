@@ -224,6 +224,43 @@ code {
     border-left: 5px solid var(--tech-primary);
 }
 
+.scripture-section {
+    margin: var(--spacing-xl) 0;
+}
+
+.scripture-section h3 {
+    color: var(--tech-secondary);
+    font-family: var(--tech-font-sans);
+    margin-bottom: var(--spacing-md);
+}
+
+.scripture-list {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.scripture-verse {
+    margin: 0;
+    padding: var(--spacing-lg);
+    background: var(--cream);
+    border-left: 4px solid var(--sage-green);
+    color: var(--warm-brown);
+}
+
+.scripture-verse p {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin: 0 0 var(--spacing-sm);
+}
+
+.scripture-verse cite {
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    text-align: right;
+}
+
 .tech-container {
     max-width: 1000px;
     margin: 0 auto;

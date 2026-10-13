@@ -455,6 +455,22 @@ h4 {
     color: var(--warm-brown);
 }
 
+#study .study-hero {
+    margin-bottom: var(--spacing-lg);
+}
+
+.study-subheading {
+    margin: var(--spacing-lg) 0 var(--spacing-md);
+    color: var(--deep-burgundy);
+    font-size: 1.6rem;
+}
+
+.thought-shelf-intro {
+    margin: 0 0 var(--spacing-md);
+    color: var(--warm-brown);
+    font-style: italic;
+}
+
 .tech-tips {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -504,6 +520,15 @@ h4 {
     background: linear-gradient(135deg, #fff0f5 0%, var(--cream) 100%);
     border-top: 5px solid var(--lavender);
     border-bottom: 5px solid var(--lavender);
+}
+
+.faith-room {
+    background: linear-gradient(135deg, #f5fff0 0%, var(--cream) 100%);
+    border-color: var(--sage-green);
+}
+
+.faith-hero .study-hero-image {
+    background-image: url('../images/gg-garden.jpg');
 }
 
 .wisdom-cards {
@@ -557,6 +582,16 @@ h4 {
     border-top: 5px solid var(--soft-yellow);
     border-bottom: 5px solid var(--soft-yellow);
     position: relative;
+}
+
+.home-garden-subheading {
+    margin: var(--spacing-lg) 0 var(--spacing-md);
+    color: var(--deep-burgundy);
+    font-size: 1.6rem;
+}
+
+.garden-room .tech-card {
+    border-color: var(--sage-green);
 }
 
 .garden-hero {
@@ -634,6 +669,47 @@ h4 {
     font-size: 1.4rem;
     margin-bottom: var(--spacing-sm);
     color: var(--deep-burgundy);
+}
+
+.blog-card-devotional {
+    align-self: start;
+}
+
+.devotional-subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--warm-brown);
+}
+
+.devotional-copy {
+    line-height: 1.7;
+}
+
+.devotional-copy > p {
+    margin: 0 0 var(--spacing-sm);
+}
+
+.devotional-verse {
+    margin: var(--spacing-sm) 0;
+    padding: 0 0 0 var(--spacing-sm);
+    border-left: 3px solid var(--sage-green);
+    font-family: var(--font-serif);
+}
+
+.devotional-verse p {
+    margin: 0 0 0.25rem;
+}
+
+.devotional-verse cite {
+    color: var(--warm-brown);
+    font-size: 0.95rem;
+}
+
+.devotional-closing {
+    margin: var(--spacing-md) 0 0;
+    color: var(--deep-burgundy);
+    font-weight: 600;
 }
 
 .blog-link {

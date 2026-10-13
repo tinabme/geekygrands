@@ -181,6 +181,19 @@ function validateHomepageManifest(recipeSlugs, tipSlugs, postSlugs) {
         });
     }
 
+    if (manifest.householdTips !== undefined && !Array.isArray(manifest.householdTips)) {
+        errors.push('data/homepage.json: householdTips must be an array when provided');
+    } else if (Array.isArray(manifest.householdTips)) {
+        manifest.householdTips.forEach(slug => {
+            if (!tipSlugs.has(slug)) {
+                errors.push(`data/homepage.json: householdTips slug "${slug}" not found in data/tips`);
+            }
+            if (!manifest.tips?.includes(slug)) {
+                errors.push(`data/homepage.json: householdTips slug "${slug}" must also appear in tips`);
+            }
+        });
+    }
+
     if (manifest.posts !== undefined && !Array.isArray(manifest.posts)) {
         errors.push('data/homepage.json: posts must be an array when provided');
     } else if (Array.isArray(manifest.posts)) {

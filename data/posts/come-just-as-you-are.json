@@ -1,0 +1,56 @@
+{
+  "slug": "come-just-as-you-are",
+  "type": "post",
+  "title": "🙏 Come Just As You Are",
+  "subtitle": "Pull up a chair, dear. This one's simple.",
+  "meta": [
+    { "label": "Published", "value": "Jan 2026", "icon": "🗓️" },
+    { "label": "Topic", "value": "Faith & Devotion", "icon": "🙏" }
+  ],
+  "intro": {
+    "title": "A Simple Place to Begin",
+    "paragraphs": [
+      "You don't have to be perfect to talk with the Lord. You don't need fancy words, a quiet room, or your life all tidied up first. Just pray, and let Him guide you to the next step. He's been waiting to hear from you."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "scripture",
+      "verses": [
+        {
+          "text": "Let us therefore come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need.",
+          "reference": "Hebrews 4:16"
+        },
+        {
+          "text": "Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.",
+          "reference": "Proverbs 3:5-6"
+        },
+        {
+          "text": "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.",
+          "reference": "Philippians 4:6"
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "title": "A Thought to Carry With You",
+      "paragraphs": [
+        "Start where you are. He'll take it from there. ☕"
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "A Quiet Moment With the Lord",
+    "text": "You can come to Him just as you are."
+  },
+  "card": {
+    "title": "Come Just As You Are",
+    "summary": "A gentle reminder that prayer can begin right where you are, with the words you have.",
+    "emoji": "🙏"
+  },
+  "seo": {
+    "title": "Come Just As You Are - Geeky Grands",
+    "description": "A gentle devotional about coming to God in prayer as you are, with KJV verses on grace, trust, and prayer."
+  }
+}

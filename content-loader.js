@@ -240,6 +240,22 @@ function renderCalloutBlock(block) {
     `;
 }
 
+function renderScriptureBlock(block) {
+    return `
+        <section class="scripture-section">
+            ${block.title ? `<h3>${escapeHtml(block.title)}</h3>` : ''}
+            <div class="scripture-list">
+                ${(block.verses || []).map(verse => `
+                    <blockquote class="scripture-verse">
+                        <p>${escapeHtml(verse.text)}</p>
+                        <cite>${escapeHtml(verse.reference)}</cite>
+                    </blockquote>
+                `).join('')}
+            </div>
+        </section>
+    `;
+}
+
 function renderTipHeader(content) {
     const header = document.getElementById('tip-header');
     const meta = (content.meta || [])
@@ -280,16 +296,32 @@ function renderTipBody(content, contentType = 'tip') {
                 return renderCodeSection(block);
             case 'callout':
                 return renderCalloutBlock(block);
+            case 'scripture':
+                return renderScriptureBlock(block);
             default:
                 return '';
         }
     }).join('');
 
-    const backLinkHref = contentType === 'post' ? 'index.html#thought-shelf' : 'index.html#study';
+    const category = new URLSearchParams(window.location.search).get('category');
+    const isGardenTip = contentType === 'tip' && category === 'garden';
+    const backLinkHref = contentType === 'post'
+        ? 'index.html#thought-shelf'
+        : isGardenTip ? 'index.html#garden' : 'index.html#study';
     const backLinkClass = 'back-to-study';
     const backLinkText = contentType === 'post'
         ? '📝 Back to the Thought Shelf for More Reflections'
-        : '📚 Back to the Study for More Topics';
+        : isGardenTip
+            ? '🌿 Back to Home & Garden'
+            : '📚 Back to Tech & Learning';
+
+    if (contentType === 'tip') {
+        const navBackLink = document.getElementById('tip-back-nav');
+        if (navBackLink) {
+            navBackLink.href = backLinkHref;
+            navBackLink.textContent = isGardenTip ? '🌿 Back to Home & Garden' : '📚 Back to Tech & Learning';
+        }
+    }
 
     root.innerHTML = `
         ${intro}
