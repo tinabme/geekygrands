@@ -1,0 +1,61 @@
+{
+  "slug": "finding-your-place-in-the-body",
+  "type": "post",
+  "title": "🚌 Finding Your Place in the Body",
+  "subtitle": "Not every job is up front, and that's perfectly okay.",
+  "meta": [
+    { "label": "Published", "value": "October 2026", "icon": "🗓️" },
+    { "label": "Topic", "value": "Faith & Devotion", "icon": "🙏" }
+  ],
+  "intro": {
+    "title": "A Place to Serve",
+    "paragraphs": [
+      "Some are called to preach and teach. Some to sing. Some to keep up the church grounds, drive the bus, or do the paperwork. All Christians are part of the body of God, and we all have a job to do. God has a different job for each of us.",
+      "For years I tried to jump into jobs without first asking Him, and those never lasted long. Then, in prayer, I realized the job He gave me was one I'd been doing for over 30 years. It seemed so small I never thought of it as a calling. I just thought, ‘There are children in my people group who should come to church and learn about the Lord too,’ so I brought them."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "scripture",
+      "verses": [
+        {
+          "text": "But now hath God set the members every one of them in the body, as it hath pleased him.",
+          "reference": "1 Corinthians 12:18"
+        },
+        {
+          "text": "For as we have many members in one body, and all members have not the same office: so we, being many, are one body in Christ, and every one members one of another.",
+          "reference": "Romans 12:4-5"
+        },
+        {
+          "text": "For who hath despised the day of small things?",
+          "reference": "Zechariah 4:10"
+        },
+        {
+          "text": "Suffer little children, and forbid them not, to come unto me: for of such is the kingdom of heaven.",
+          "reference": "Matthew 19:14"
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "title": "A Thought to Carry With You",
+      "paragraphs": [
+        "Ask Him where He wants you. You might already be there. 💛"
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Your Work Matters",
+    "text": "God can use the quiet, faithful work that others may never see."
+  },
+  "card": {
+    "title": "Finding Your Place in the Body",
+    "summary": "A reflection on finding your calling in service, even when the work feels small.",
+    "emoji": "🚌"
+  },
+  "seo": {
+    "title": "Finding Your Place in the Body - Geeky Grands",
+    "description": "A devotional reflection on serving in the role God has given you, with KJV verses about the body of Christ and small things."
+  }
+}

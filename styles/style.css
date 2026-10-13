@@ -636,6 +636,47 @@ h4 {
     color: var(--deep-burgundy);
 }
 
+.blog-card-devotional {
+    align-self: start;
+}
+
+.devotional-subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--warm-brown);
+}
+
+.devotional-copy {
+    line-height: 1.7;
+}
+
+.devotional-copy > p {
+    margin: 0 0 var(--spacing-sm);
+}
+
+.devotional-verse {
+    margin: var(--spacing-sm) 0;
+    padding: 0 0 0 var(--spacing-sm);
+    border-left: 3px solid var(--sage-green);
+    font-family: var(--font-serif);
+}
+
+.devotional-verse p {
+    margin: 0 0 0.25rem;
+}
+
+.devotional-verse cite {
+    color: var(--warm-brown);
+    font-size: 0.95rem;
+}
+
+.devotional-closing {
+    margin: var(--spacing-md) 0 0;
+    color: var(--deep-burgundy);
+    font-weight: 600;
+}
+
 .blog-link {
     color: var(--sage-green);
     text-decoration: none;

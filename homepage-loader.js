@@ -43,12 +43,43 @@ function renderPostCard(entry) {
     const title = escapeText(entry.card?.title || entry.title || 'Untitled Post');
     const summary = escapeText(entry.card?.summary || '');
     const meta = Array.isArray(entry.meta) ? entry.meta : [];
-    const dateLabel = escapeText(meta.find(item => item.label === 'Published')?.value || 'Recent Reflection');
+    const dateLabel = escapeText(meta.find(item => item.label === 'Published')?.value || '');
     const slug = encodeURIComponent(entry.slug);
+
+    if (meta.some(item => item.label === 'Topic' && item.value === 'Faith & Devotion')) {
+        const subtitle = escapeText(entry.subtitle || '');
+        const paragraphs = (entry.intro?.paragraphs || [])
+            .map(paragraph => `<p>${escapeText(paragraph)}</p>`)
+            .join('');
+        const devotionBlocks = (entry.blocks || []).map(block => {
+            if (block.type === 'scripture') {
+                const references = (block.verses || [])
+                    .slice(0, 2)
+                    .map(verse => escapeText(verse.reference))
+                    .join(', ');
+                return references ? `<p class="devotional-references">${references}</p>` : '';
+            }
+            if (block.type === 'callout') {
+                return (block.paragraphs || []).map(paragraph => `
+                    <p class="devotional-closing">${escapeText(paragraph)}</p>
+                `).join('');
+            }
+            return '';
+        }).join('');
+
+        return `
+            <article class="blog-card blog-card-devotional">
+                ${dateLabel ? `<div class="blog-date">${dateLabel}</div>` : ''}
+                <h4>${title}</h4>
+                <p class="devotional-subtitle">${subtitle}</p>
+                <div class="devotional-copy">${paragraphs}${devotionBlocks}</div>
+            </article>
+        `;
+    }
 
     return `
         <article class="blog-card">
-            <div class="blog-date">${dateLabel}</div>
+            ${dateLabel ? `<div class="blog-date">${dateLabel}</div>` : ''}
             <h4>${title}</h4>
             <p>${summary}</p>
             <a href="post.html?slug=${slug}" class="blog-link">Read Reflection →</a>

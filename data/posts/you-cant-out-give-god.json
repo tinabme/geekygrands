@@ -1,0 +1,61 @@
+{
+  "slug": "you-cant-out-give-god",
+  "type": "post",
+  "title": "🎁 You Can't Out-Give God",
+  "subtitle": "Let me share one of the sweetest things I've learned.",
+  "meta": [
+    { "label": "Published", "value": "June 2026", "icon": "🗓️" },
+    { "label": "Topic", "value": "Faith & Devotion", "icon": "🙏" }
+  ],
+  "intro": {
+    "title": "A Lesson in Giving",
+    "paragraphs": [
+      "Whether it's tithing or giving your time and skills, giving can seem impossible. I understand that feeling. But I can honestly say I have never given God more than He has given back to me. Time and time again, when I answered the call to give, the blessing overflowed. And when I let fear or greed hold me back, whatever I thought I'd saved, I ended up spending anyway.",
+      "I'm so grateful for how He has provided, and I want you to know that joy too."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "scripture",
+      "verses": [
+        {
+          "text": "Bring ye all the tithes into the storehouse, that there may be meat in mine house, and prove me now herewith, saith the LORD of hosts, if I will not open you the windows of heaven, and pour you out a blessing, that there shall not be room enough to receive it.",
+          "reference": "Malachi 3:10"
+        },
+        {
+          "text": "Give, and it shall be given unto you; good measure, pressed down, and shaken together, and running over, shall men give into your bosom.",
+          "reference": "Luke 6:38"
+        },
+        {
+          "text": "There is that scattereth, and yet increaseth; and there is that withholdeth more than is meet, but it tendeth to poverty.",
+          "reference": "Proverbs 11:24"
+        },
+        {
+          "text": "God loveth a cheerful giver.",
+          "reference": "2 Corinthians 9:7"
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "title": "A Thought to Carry With You",
+      "paragraphs": [
+        "Give with a cheerful heart, and watch what He does with it. 🌾"
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Give With a Cheerful Heart",
+    "text": "May you know the joy of giving and the gratitude of seeing how God provides."
+  },
+  "card": {
+    "title": "You Can't Out-Give God",
+    "summary": "A personal reflection on giving with faith, gratitude, and a cheerful heart.",
+    "emoji": "🎁"
+  },
+  "seo": {
+    "title": "You Can't Out-Give God - Geeky Grands",
+    "description": "A personal devotional about giving with faith and gratitude, with KJV verses on generosity."
+  }
+}
