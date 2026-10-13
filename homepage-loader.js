@@ -23,18 +23,18 @@ function renderRecipeCard(entry) {
     `;
 }
 
-function renderTipCard(entry) {
+function renderTipCard(entry, category = 'study') {
     const title = escapeText(entry.card?.title || entry.title || 'Untitled Guide');
     const summary = escapeText(entry.card?.summary || '');
     const emoji = escapeText(entry.card?.emoji || '📚');
-    const slug = encodeURIComponent(entry.slug);
+    const query = new URLSearchParams({ slug: entry.slug, category });
 
     return `
         <article class="tech-card">
             <div class="tech-icon">${emoji}</div>
             <h4>${title}</h4>
             <p>${summary}</p>
-            <a href="tip.html?slug=${slug}" class="tech-link">Learn More →</a>
+            <a href="tip.html?${query}" class="tech-link">Learn More →</a>
         </article>
     `;
 }
@@ -137,7 +137,7 @@ async function loadHomepageCards() {
         tipRoot.innerHTML = technicalEntries.map(renderTipCard).join('');
         if (householdTipRoot) {
             householdTipRoot.innerHTML = householdEntries.length
-                ? householdEntries.map(renderTipCard).join('')
+                ? householdEntries.map(entry => renderTipCard(entry, 'garden')).join('')
                 : '<p class="home-data-error">Everyday guides are coming soon.</p>';
             householdTipRoot.setAttribute('aria-busy', 'false');
         }
