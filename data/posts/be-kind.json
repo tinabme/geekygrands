@@ -1,0 +1,60 @@
+{
+  "slug": "be-kind",
+  "type": "post",
+  "title": "💛 Be Kind Anyway",
+  "subtitle": "A little grace goes a long way.",
+  "meta": [
+    { "label": "Topic", "value": "Simple Faith", "icon": "🙏" }
+  ],
+  "intro": {
+    "title": "💛 Be Kind Anyway",
+    "paragraphs": [
+      "All around us, people are carrying something we can't see. I love the way my pastor puts it: ''We're all either in the middle of something, just coming out of something, or getting ready to go through something.''",
+      "So when someone is rude to you for no reason, try to remember that it usually has nothing to do with you. They may be having the hardest day of their life. Jesus showed us what to do with that kind of meanness. He didn't repay it, and we don't have to either. Be kind anyway. You may never know what a gentle word did for them, but God does"
+    ]
+  },
+  "blocks": [
+    {
+      "type": "scripture",
+      "verses": [
+        {
+          "text": "A soft answer turneth away wrath: but grievous words stir up anger.",
+          "reference": "Proverbs 15:1"
+        },
+        {
+          "text": "And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ’s sake hath forgiven you.",
+          "reference": "Ephesians 4:32"
+        },
+        {
+          "text": "Recompense to no man evil for evil.",
+          "reference": "Romans 12:17"
+        },
+        {
+          "text": "Be not overcome of evil, but overcome evil with good.",
+          "reference": "Romans 12:21"
+        } 
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "title": "A Thought to Carry With You",
+      "paragraphs": [
+        "Kindness costs nothing, and it may be the only sermon someone sees today. 🤗 "
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Kindness Matters",
+    "text": "God can use the quiet, faithful work that others may never see."
+  },
+  "card": {
+    "title": "Be Kind Anyway",
+    "summary": "A reflection on showing kindness and grace, even when it's not easy.",
+    "emoji": "💛"
+  },
+  "seo": {
+    "title": "Be Kind Anyway - Geeky Grands",
+    "description": "A devotional reflection on showing kindness and grace, with KJV verses about responding to evil with good and being tenderhearted."
+  }
+}
