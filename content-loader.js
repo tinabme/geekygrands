@@ -353,7 +353,12 @@ async function loadContentPage() {
         return;
     }
 
-    const slug = new URLSearchParams(window.location.search).get('slug');
+    const searchParams = new URLSearchParams(window.location.search);
+    const slug = searchParams.get('slug');
+    document.body.classList.toggle(
+        'household-tip-page',
+        contentType === 'tip' && searchParams.get('category') === 'garden'
+    );
     if (!slug) {
         renderError('Missing slug in the page URL.');
         return;
