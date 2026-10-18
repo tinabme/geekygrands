@@ -669,6 +669,17 @@ code {
     gap: var(--spacing-lg);
 }
 
+.step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    background: var(--high-contrast-bg);
+    padding: var(--spacing-lg);
+    border-radius: 16px;
+    border: 2px solid var(--tech-border-code);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
 
 .step-item:hover {
     border-color: var(--tech-primary);
