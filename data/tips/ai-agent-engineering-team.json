@@ -1,0 +1,107 @@
+{
+  "slug": "ai-agent-engineering-team",
+  "type": "tip",
+  "title": "Think of AI Agents as a Software Engineering Team",
+  "subtitle": "Coordinate a fleet of specialized agents to plan, build, check, and release software together.",
+  "hero": {
+    "image": "images/gg-tech.jpg",
+    "imageAlt": "Geeky Grands technology guide"
+  },
+  "meta": [
+    { "label": "Level", "value": "Beginner Friendly", "icon": "🟢" },
+    { "label": "Type", "value": "Workflow Guide", "icon": "🧭" },
+    { "label": "Category", "value": "AI Engineering", "icon": "🤖" }
+  ],
+  "intro": {
+    "title": "A CSV Export Request",
+    "paragraphs": [
+      "Leadership asks: “Can we add a way for customers to export their reports to CSV?” A software team would clarify the request, plan an approach, write and test the code, review it, and release it.",
+      "An AI agent fleet can help with each part by assigning different jobs to specialized agents. Some work in parallel; others wait until a previous decision or task is complete. People still oversee the important decisions."
+    ]
+  },
+  "blocks": [
+    {
+      "type": "steps",
+      "title": "From Request to Gradual Release",
+      "items": [
+        {
+          "title": "Understand the request",
+          "body": "A Product or Requirements Agent turns the request into a clear user story: “As a customer, I want to download my report as a CSV file so I can analyze it in a spreadsheet.”"
+        },
+        {
+          "title": "Plan the work",
+          "body": "An Architecture Agent proposes an implementation and documents the choice in an Architecture Decision Record (ADR). A Planning Agent creates an epic and breaks it into tasks. A human engineer reviews and approves the plan before implementation begins."
+        },
+        {
+          "title": "Work in parallel",
+          "body": "After approval, independent tasks can happen at the same time. The Code Agent implements CSV export, the Test Agent creates automated tests from the requirements, and the Security Agent checks for data exposure and other risks."
+        },
+        {
+          "title": "Check the work",
+          "body": "A QA Agent checks behavior against the requirements, while a Code Review Agent checks the implementation and coding standards. If they find problems, those findings go back to the Code Agent to correct before the workflow continues."
+        },
+        {
+          "title": "Build and merge safely",
+          "body": "CI/CD checks run automatically, then an authorized human reviews and approves the merge. The feature can be deployed behind a feature flag, ready for controlled access but not yet visible to customers."
+        },
+        {
+          "title": "Release gradually",
+          "body": "A Release Agent enables the feature for a small group first. A Monitoring Agent watches for errors. If the rollout looks healthy, expand access; if something goes wrong, turn the feature off and investigate."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "How the Fleet Works Together",
+      "items": [
+        {
+          "title": "Sequential decisions",
+          "icon": "⏭️",
+          "body": "Requirements → Architecture → Plan → Human approval. Each stage uses the previous stage's output, so it waits for that work to finish."
+        },
+        {
+          "title": "Parallel tasks",
+          "icon": "⏩",
+          "body": "Code, tests, and security checks can proceed side by side once the plan is approved, because they are independent tasks."
+        },
+        {
+          "title": "Quality and release gates",
+          "icon": "🛡️",
+          "body": "QA → Review → CI/CD → approved merge → gradual release → monitoring. The workflow pauses for human approval at consequential decision points."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "What the Orchestrator Coordinates",
+      "items": [
+        { "title": "Assigns work", "icon": "🧩", "body": "Chooses the right specialized agent for each job." },
+        { "title": "Manages dependencies", "icon": "🔗", "body": "Knows which tasks can run together and which must wait for earlier results." },
+        { "title": "Handles corrections", "icon": "🔁", "body": "Retries work when appropriate or routes a problem back to the agent responsible for fixing it." },
+        { "title": "Keeps people accountable", "icon": "👥", "body": "Calls for human review or approval when a decision affects users, security, or production." }
+      ]
+    },
+    {
+      "type": "callout",
+      "title": "The Most Important Tech Tip",
+      "variant": "note",
+      "paragraphs": [
+        "Don't just create a fleet of agents. Orchestrate the fleet. Agents do the work; the orchestrator manages the workflow.",
+        "The goal is not to replace one engineer with many AI agents. It is to coordinate specialized agents so they can complete work together safely and efficiently. Humans remain accountable for important decisions, approvals, and production releases."
+      ]
+    }
+  ],
+  "footer": {
+    "heading": "Coordinate the Work, Keep Humans in the Loop",
+    "text": "A well-orchestrated agent team can move efficiently without losing sight of quality, safety, or accountability."
+  },
+  "card": {
+    "title": "Think of AI Agents as a Software Engineering Team",
+    "summary": "See how specialized AI agents can plan, build, test, review, and release a feature together, with an orchestrator and human oversight.",
+    "emoji": "🤖"
+  },
+  "seo": {
+    "title": "Think of AI Agents as a Software Engineering Team - Geeky Grands",
+    "description": "A practical guide to coordinating specialized AI agents across requirements, planning, parallel implementation, review, and gradual release."
+  }
+}
